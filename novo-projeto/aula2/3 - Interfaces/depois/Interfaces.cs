@@ -6,58 +6,72 @@ using System.Threading.Tasks;
 
 namespace certificacao_csharp_roteiro
 {
-    class Interfaces : IAulaItem
+  class Interfaces : IAulaItem
+  {
+    public void Executar()
     {
-        public void Executar()
-        {
-        }
+      IEletrodomestico eletro1 = new Televisao();
+      eletro1.Ligar();
+
+      eletro1 = new Abajur();
+    }
+  }
+
+  interface IEletrodomestico
+  {
+    void Ligar();
+    void Desligar();
+  }
+
+  interface IIluminacao
+  {
+    public double PotenciaDaLampada { get; set; }
+  }
+  class Televisao : IEletrodomestico
+  {
+    public void Desligar()
+    {
     }
 
-    class Televisao
+    public void Ligar()
     {
-        public void Desligar()
-        {
-        }
+    }
+  }
 
-        public void Ligar()
-        {
-        }
+  class Abajur : IEletrodomestico, IIluminacao
+  {
+    public double PotenciaDaLampada { get; set; }
+
+    public void Desligar()
+    {
     }
 
-    class Abajur
+    public void Ligar()
     {
-        public double PotenciaDaLampada { get; set; }
+    }
+  }
 
-        public void Desligar()
-        {
-        }
+  class Lanterna : IEletrodomestico, IIluminacao
+  {
+    public double PotenciaDaLampada { get; set; }
 
-        public void Ligar()
-        {
-        }
+    public void Desligar()
+    {
     }
 
-    class Lanterna
+    public void Ligar()
     {
-        public double PotenciaDaLampada { get; set; }
+    }
+  }
 
-        public void Desligar()
-        {
-        }
-
-        public void Ligar()
-        {
-        }
+  class Radio : IEletrodomestico
+  {
+    public void Desligar()
+    {
     }
 
-    class Radio
+    public void Ligar()
     {
-        public void Desligar()
-        {
-        }
-
-        public void Ligar()
-        {
-        }
     }
+  }
 }
