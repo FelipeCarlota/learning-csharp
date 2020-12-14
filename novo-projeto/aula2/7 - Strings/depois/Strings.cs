@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace certificacao_csharp_roteiro
 {
-  class TiposDeValor : IAulaItem
+  class Strings : IAulaItem
   {
     public void Executar()
     {
-      int idade;
-      idade = 25;
-      Console.WriteLine(idade);
+      // string a = "bom dia";
+      // string b = "b";
     }
   }
 }
