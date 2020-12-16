@@ -6,56 +6,68 @@ using System.Threading.Tasks;
 
 namespace certificacao_csharp_roteiro
 {
-    class PropriedadesIndexadas : IAulaItem
+  class PropriedadesIndexadas : IAulaItem
+  {
+    public void Executar()
     {
-        public void Executar()
-        {
-            var sala = new Sala();
-            sala.SetReserva("D01", new ClienteCinema("Maria de Souza"));
-            sala.SetReserva("D02", new ClienteCinema("José da Silva"));
+      var sala = new Sala();
+      sala["D01"] = new ClienteCinema("Maria de Souza");
+      sala["D02"] = new ClienteCinema("José da Silva");
 
-            sala.ImprimirReservas();
-        }
+      sala.ImprimirReservas();
+    }
+  }
+
+  class ClienteCinema
+  {
+    public ClienteCinema(string nome)
+    {
+      Nome = nome;
     }
 
-    class ClienteCinema
+    public string Nome { get; set; }
+
+    public override string ToString()
     {
-        public ClienteCinema(string nome)
-        {
-            Nome = nome;
-        }
+      return Nome;
+    }
+  }
 
-        public string Nome { get; set; }
+  class Sala
+  {
+    private readonly IDictionary<string, ClienteCinema> reservas
+        = new Dictionary<string, ClienteCinema>();
 
-        public override string ToString()
-        {
-            return Nome;
-        }
+    // public ClienteCinema GetReserva(string codigoAssento)
+    // {
+    //   return reservas[codigoAssento];
+    // }
+
+    // public void SetReserva(string codigoAssento, ClienteCinema value)
+    // {
+    //   reservas[codigoAssento] = value;
+    // }
+
+    public ClienteCinema this[string codigoAssento]
+    {
+      get
+      {
+        return reservas[codigoAssento];
+      }
+      set
+      {
+        reservas[codigoAssento] = value;
+      }
     }
 
-    class Sala
+    public void ImprimirReservas()
     {
-        private readonly IDictionary<string, ClienteCinema> reservas
-            = new Dictionary<string, ClienteCinema>();
-
-        public ClienteCinema GetReserva(string codigoAssento)
-        {
-            return reservas[codigoAssento];
-        }
-
-        public void SetReserva(string codigoAssento, ClienteCinema value)
-        {
-            reservas[codigoAssento] = value;
-        }
-
-        public void ImprimirReservas()
-        {
-            Console.WriteLine("Assentos Reservados");
-            Console.WriteLine("===================");
-            foreach (var reserva in reservas)
-            {
-                Console.WriteLine($"{reserva.Key} - {reserva.Value}");
-            }
-        }
+      Console.WriteLine("Assentos Reservados");
+      Console.WriteLine("===================");
+      foreach (var reserva in reservas)
+      {
+        Console.WriteLine($"{reserva.Key} - {reserva.Value}");
+      }
     }
+  }
 }
