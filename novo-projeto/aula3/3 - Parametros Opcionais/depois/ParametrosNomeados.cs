@@ -16,7 +16,9 @@ namespace certificacao_csharp_roteiro
       //Argumentos nomeados podem ser fornecidos para os parâmetros em qualquer ordem.
       ImprimirDetalhesDoPedido(nomeProduto: "Caneca Vermelha", vendedor: "Thiago Pereira", numeroPedido: 05);
 
-
+      //Argumentos nomeados misturados com argumentos posicionais são válidos
+      // Desde que obedeçam a forma ordenada.
+      ImprimirDetalhesDoPedido("Maria Cláudia", 51, nomeProduto: "Toalha de Rosto");
     }
 
     void ImprimirDetalhesDoPedido(string vendedor, int numeroPedido, string nomeProduto)
