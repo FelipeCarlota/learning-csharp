@@ -6,30 +6,50 @@ using System.Threading.Tasks;
 
 namespace certificacao_csharp_roteiro
 {
-    class MetodosDeExtensao : IAulaItem
+  class MetodosDeExtensao : IAulaItem
+  {
+    public void Executar()
     {
-        public void Executar()
-        {
-            Impressora impressora = new Impressora("Este é\r\no meu documento");
-            impressora.ImprimirDocumento();
-        }
+      Impressora impressora = new Impressora("Este é\r\no meu documento");
+      impressora.ImprimirDocumento();
+      ImprimirDocumentoHTML(impressora.Documento);
+      impressora.ImprimirDocumentoHTML();
+    }
+    void ImprimirDocumentoHTML(string documento)
+    {
+      Console.WriteLine($"<html><body>{documento}</body></html>");
+    }
+  }
+
+  class Impressora
+  {
+    public string Documento { get; }
+
+    public Impressora(string documento)
+    {
+      this.Documento = documento;
     }
 
-    class Impressora
+    public void ImprimirDocumento()
     {
-        public string Documento { get; }
-
-        public Impressora(string documento)
-        {
-            this.Documento = documento;
-        }
-
-        public void ImprimirDocumento()
-        {
-            Console.WriteLine();
-            Console.WriteLine(Documento);
-        }
+      Console.WriteLine();
+      Console.WriteLine(Documento);
     }
+    // public void ImprimirDocumentoHTML()
+    // {
+    //   Console.WriteLine($"<html><body>{Documento}</body></html>");
+    // }
+  }
+
+  // Método de extensão
+  static class ExtensaoImpressora
+  {
+    public static void ImprimirDocumentoHTML(this Impressora impressora)
+    {
+      Console.WriteLine($"<html><body>{impressora.Documento}</body></html>");
+    }
+  }
+
 }
 
 
