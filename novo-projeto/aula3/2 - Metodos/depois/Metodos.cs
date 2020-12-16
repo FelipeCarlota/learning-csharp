@@ -18,7 +18,6 @@ namespace certificacao_csharp_roteiro
       Console.WriteLine();
       outroRetangulo = new Retangulo(5, 6);
       Console.WriteLine(Retangulo.Semelhante(retangulo, outroRetangulo));
-
     }
   }
 

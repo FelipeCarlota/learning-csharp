@@ -10,6 +10,12 @@ namespace certificacao_csharp_roteiro
   {
     public void Executar()
     {
+      //O método pode ser chamado de forma ordenada, usando argumentos posicionais.
+      ImprimirDetalhesDoPedido("Pedro Cassiano", 20, "Caneta Azul");
+
+      //Argumentos nomeados podem ser fornecidos para os parâmetros em qualquer ordem.
+      ImprimirDetalhesDoPedido(nomeProduto: "Caneca Vermelha", vendedor: "Thiago Pereira", numeroPedido: 05);
+
 
     }
 
