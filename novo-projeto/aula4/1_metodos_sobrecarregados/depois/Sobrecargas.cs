@@ -25,7 +25,8 @@ namespace certificacao_csharp_roteiro
       int profundidade = 4;
       Console.WriteLine($"O volume do prisma é: {Volume(largura, profundidade, altura)}");
     }
-
+    // A sobrecarga de método permite que vários métodos utilizem o mesmo desde que suas assiniaturas
+    // variem no número, ordem e tipo dos parâmetros e também no valor de retorno.
     double Volume(double lado)
     {
       return Math.Pow(lado, 3);
@@ -36,7 +37,7 @@ namespace certificacao_csharp_roteiro
       return altura * Math.PI * Math.Pow(raio, 2);
     }
 
-    double Volume(double largura, double profundidade, double altura)
+    double Volume(double largura, double profundidade, double altura) //porém esses tipos de variáveis são os mesmos. por que?
     {
       return largura * profundidade * altura;
     }
