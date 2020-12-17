@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace certificacao_csharp_roteiro.antes
 {
-    class Boxing : IAulaItem
+  class Boxing : IAulaItem
+  {
+    public void Executar()
     {
-        public void Executar()
-        {
-            int numero = 57;
-        }
+      int numero = 57;
+      Console.WriteLine(numero);
     }
+  }
 }

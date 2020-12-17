@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace certificacao_csharp_roteiro.antes
 {
-    class OperadoresISeAS : IAulaItem
+  class OperadoresISeAS : IAulaItem
+  {
+    public void Executar()
     {
-        public void Executar()
-        {
-            Animal animal = new Animal();
-            Gato gato = new Gato();
-            Cliente cliente = new Cliente("José da Silva", 30);
-        }
-
-        public void Alimentar(object obj)
-        {
-            Animal animal = (Animal)obj;
-            animal.Beber();
-            animal.Comer();
-        }
+      Animal animal = new Animal();
+      Gato gato = new Gato();
+      // Cliente cliente = new Cliente("José da Silva", 30);
     }
+
+    public void Alimentar(object obj)
+    {
+      Animal animal = (Animal)obj;
+      animal.Beber();
+      animal.Comer();
+    }
+  }
 }

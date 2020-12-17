@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace certificacao_csharp_roteiro
 {
-    class ConversoesImplicitas : IAulaItem
+  class ConversoesImplicitas : IAulaItem
+  {
+    public void Executar()
     {
-        public void Executar()
-        {
-        }
+      int inteiro = 2_123_456_789;
+      long inteiroLongo = inteiro;
+      Console.WriteLine(inteiroLongo);
     }
+  }
 }
 

@@ -19,7 +19,7 @@ namespace certificacao_csharp_roteiro
         int unboxed = (int)caixa;
         Console.WriteLine("Unbox ready.");
       }
-      catch (InvalidCastException e)
+      catch (InvalidCastException)
       {
         Console.WriteLine("Error: unboxing is not right, please review that unbox.");
       }

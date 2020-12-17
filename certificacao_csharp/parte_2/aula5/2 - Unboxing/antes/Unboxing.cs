@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace certificacao_csharp_roteiro.antes
 {
-    class Unboxing : IAulaItem
+  class Unboxing : IAulaItem
+  {
+    public void Executar()
     {
-        public void Executar()
-        {
-            int numero = 57;      // tipo de valor
-        }
+      int numero = 57;      // tipo de valor
+      Console.WriteLine(numero);
     }
+  }
 }
