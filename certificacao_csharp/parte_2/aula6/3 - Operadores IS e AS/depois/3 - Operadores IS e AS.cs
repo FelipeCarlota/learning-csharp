@@ -12,8 +12,8 @@ namespace certificacao_csharp_roteiro
     {
       Animal animal = new Animal();
       Gato gato = new Gato();
-      Cliente cliente = new Cliente("José da Silva", 30);
-      // Console.WriteLine(cliente);
+      Cliente cliente = new Cliente("Pedro da Silva", 30);
+      Console.WriteLine($"Cliente: {cliente.Nome}, Idade: {cliente.Idade}");
 
       Alimentar(animal);
       Alimentar(gato);
@@ -31,13 +31,14 @@ namespace certificacao_csharp_roteiro
       Console.WriteLine("Não é um animal");
     }
   }
-  class Cliente
+  public class Cliente
   {
-    string nome;
-    int idade;
-    public Cliente(string cliente, int idade)
+    public string Nome { get; set; }
+    public int Idade { get; set; }
+    public Cliente(string nome, int idade)
     {
-
+      this.Nome = nome;
+      this.Idade = idade;
     }
   }
 }
