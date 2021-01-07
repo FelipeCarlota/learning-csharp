@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\felip\\.nuget\\packages\\": {}
+    "/Users/felipecarlota/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\felip\\Documents\\csharp\\certificacao_csharp\\novo-projeto.csproj",
+      "projectUniqueName": "/Users/felipecarlota/projetos/learning-csharp/certificacao_csharp/novo-projeto.csproj",
       "projectName": "novo-projeto",
-      "projectPath": "C:\\Users\\felip\\Documents\\csharp\\certificacao_csharp\\novo-projeto.csproj",
-      "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\felip\\Documents\\csharp\\certificacao_csharp\\obj\\",
+      "projectPath": "/Users/felipecarlota/projetos/learning-csharp/certificacao_csharp/novo-projeto.csproj",
+      "packagesPath": "/Users/felipecarlota/.nuget/packages/",
+      "outputPath": "/Users/felipecarlota/projetos/learning-csharp/certificacao_csharp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\felip\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/felipecarlota/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
       }
     }
   }
