@@ -11,34 +11,49 @@ namespace Atividades
 			Console.WriteLine("         Algarismos Romanos por Extenso        ");
 			Console.WriteLine("===============================================");
 
+			dynamic[] contagem = {
+				"um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez",
+				"onze", "doze", "treze", "catorze", "quinze", "dezesseis", "dezessete", "dezoito", "dezenove", "vinte",
+				"trinta", "quarenta", "cinquenta", "sessenta", "setenta", "oitenta", "noventa", "cem",
+				"duzentos", "trezentos", "quatrocentos", "quinhentos", "seiscentos", "setecentos", "oitocentos", "novecentos", 
+				"mil"
+			};
+
 			string numero;
 
 			Console.WriteLine("Por favor, digite um número romano:");
 			numero = Console.ReadLine();
 
-			int[] numeros = {1, 5, 10, 50, 100, 500, 1000};
-			string[] numerosRomanos = {"I", "V", "X", "L", "C", "D", "M"};
-			//encontrar uma forma de relacionar as duas arrays
+			int converterNumero = Int32.Parse(numero);
 
+			Console.WriteLine(contagem[converterNumero-1]);
 
-			// 1- As letras I, X, C, M só podem ser repetidos três vezes consecutivas. Exemplo: III = 3 e XXX = 30; 
-			if (numero.Contains("IIII") || numero.Contains("XXXX") || numero.Contains("CCCC") || numero.Contains("MMMM")) {
-				Console.WriteLine("Não é um número válido, por favor, tente novamente.");
-			} else {Console.WriteLine($"O número digitado foi: {numero}");}
+// 			int[] numeros = {1, 5, 10, 50, 100, 500, 1000};
+// 			string[] numerosRomanos = {"I", "V", "X", "L", "C", "D", "M"};
+// 			//encontrar uma forma de relacionar as duas arrays
 
-			// 2- No princípio subtrativo, quando duas letras são diferentes e a de menor valor antecede a de maior valor, subtraem-se os seus valores. Exemplo: IV (5 – 1) = 4 e XLV (55 - 10) = 45; 
-			// int I = 1;
-		 	// int V = 5;
-		 	// int X = 10;
-		 	// int L = 50;
-		 	// int C = 100;
-		 	// int D = 500;
-		 	// int M = 1000;
+// 			for (int i = 0; i < 7; i++) {
+// 				if(numeros[i] < numeros [i+1]){
+// ;
+// 				}
+// 			}
 
+// 			// 1- As letras I, X, C, M só podem ser repetidos três vezes consecutivas. Exemplo: III = 3 e XXX = 30; 
+// 			// if (numero.Contains("IIII") || numero.Contains("XXXX") || numero.Contains("CCCC") || numero.Contains("MMMM")) {
+// 			// 	Console.WriteLine("Não é um número válido, por favor, tente novamente.");
+// 			// } else {Console.WriteLine($"O número digitado foi: {numero}");}
+
+// 			// 2- No princípio subtrativo, quando duas letras são diferentes e a de menor valor antecede a de maior valor, subtraem-se os seus valores. Exemplo: IV (5 – 1) = 4 e XLV (55 - 10) = 45; 
+// 			// int I = 1;
+// 		 	// int V = 5;
+// 		 	// int X = 10;
+// 		 	// int L = 50;
+// 		 	// int C = 100;
+// 		 	// int D = 500;
+// 		 	// int M = 1000;
 			
-			
-			for (int i = 0; i < numero.Length; i++) {
-				//alimentação do vetor?
+// 			for (int i = 0; i < numero.Length; i++) {
+// 				//alimentação do vetor?
 				//condicional do menor algarismo vindo antes subtrair 1 porém, não consigo medir isso com a string
 				// if() {
 
@@ -59,4 +74,4 @@ namespace Atividades
 			
 		}
 	}
-}
+
