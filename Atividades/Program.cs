@@ -15,6 +15,15 @@ namespace Atividades
 			Console.WriteLine("Por favor, digite um número romano:");
 			numero = Console.ReadLine();
 
+			// Lista dos números
+			string I = "um";
+		 	string V = "cinco";
+		 	string X = "dez";
+		 	string L = "cinquenta";
+		 	string C = "cem";
+		 	string D = "quinhentos";
+		 	string M = "mil";
+
 			//Testando a Condicional if
 			if (numero == "I") {
 				numero = "Um";
@@ -23,7 +32,4 @@ namespace Atividades
 			Console.WriteLine($"O número digitado foi: {numero}");
 		}
 	}
-
-	
-
 }
