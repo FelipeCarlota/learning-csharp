@@ -36,9 +36,6 @@ namespace Atividades
 		 	// int M = 1000;
 
 			
-
-			string[] armazenamento;
-			
 			
 			for (int i = 0; i < numero.Length; i++) {
 				//alimentação do vetor?
