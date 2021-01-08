@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.ComponentModel.DataAnnotations;
+using System;
 
 namespace Atividades
 {
@@ -27,6 +28,40 @@ namespace Atividades
 			int converterNumero = Int32.Parse(numero);
 
 			Console.WriteLine(contagem[converterNumero-1]);
+
+
+			valor = "IIIL";
+
+			var elementos = new List<string>();
+
+
+			for (var i = 0; i <= Validator.Length; i++) 
+			{
+				var valorLIdoDaCadeiaDeCaracteres = valor.Substring(i, 1);
+				elementos.Add(valorLIdoDaCadeiaDeCaracteres);
+			}
+
+
+			var openWith =  new Dictionary<string, string>();
+
+
+			openWith.Add("txt", "notepad.exe");
+			openWith.Add("bmp", "paint.exe");
+			openWith.Add("dib", "paint.exe");
+			openWith.Add("rtf", "wordpad.exe");
+
+			var meuValor = openWith["txt"];
+
+			/*
+				elementos[0] -> "I"
+				elementos[1] -> "I"
+				elementos[2] -> "I"
+				elementos[3] -> "L"
+			*/
+
+			// dictionary
+
+
 
 // 			int[] numeros = {1, 5, 10, 50, 100, 500, 1000};
 // 			string[] numerosRomanos = {"I", "V", "X", "L", "C", "D", "M"};
