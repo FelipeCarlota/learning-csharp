@@ -6,6 +6,7 @@ namespace Atividades
 	{
 		static void Main(string[] args)
 		{
+
 			Console.WriteLine("===============================================");
 			Console.WriteLine("         Algarismos Romanos por Extenso        ");
 			Console.WriteLine("===============================================");
@@ -29,24 +30,25 @@ namespace Atividades
 		 	int D = 500;
 		 	int M = 1000;
 
-			 
+
 			string[] armazenamento;
 			
 			
 			for (int i = 0; i < numero.Length; i++) {
-				//alimentação do vetor
+				//alimentação do vetor?
 				//condicional do menor algarismo vindo antes subtrair 1 porém, não consigo medir isso com a string
-				if() {
+				// if() {
 
-				}
+				// }
 			}
+			/* Dificuldades no exercício:
 
-			// Principais regras 
-			
+			- leitura de caractere por caractere da palavra e identificação do valor na posição;
+			- identificar e calcular os caracteres em cadeia.
+			- sintaxe da atribuição do vetor no repetidor for
 
-			
-		
 
+			*/
 
 			// 3- No princípio aditivo, quando duas letras são diferentes e a de maior valor antecede a de menor valor, somam-se os seus valores. Exemplo: VI (5 + 1) = 6 e LIII (50 + 3) = 53; 
 
