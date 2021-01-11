@@ -8,17 +8,17 @@ namespace Atividades
 	{
 		public static void Main(string[] args)
 		{
-			dynamic[] contagem = {
-				"um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez",
-				"onze", "doze", "treze", "catorze", "quinze", "dezesseis", "dezessete", "dezoito", "dezenove", "vinte",
-				"trinta", "quarenta", "cinquenta", "sessenta", "setenta", "oitenta", "noventa", "cem",
-				"duzentos", "trezentos", "quatrocentos", "quinhentos", "seiscentos", "setecentos", "oitocentos", "novecentos", 
-				"mil"
-			};
 
-			//relacionamento entre numero Romano com Números
+			string numero = "XIV";
+			// int valor = 0;
+			int soma = 0;
+
+			//Obejetivo: Receber numero romano e transcrever por extenso.
+
+			//2º Regra – As letras I, X, C podem ser escritas na frente das outras, tendo seus valores somados à letra de maior valor.
+			// //relacionamento entre numero Romano com Números
 			var numerosRomanos =  new Dictionary<string, int>();
-
+			var guardaAlgarismo = new List<string>();
 
 			numerosRomanos.Add("I", 1);
 			numerosRomanos.Add("V", 5);
@@ -28,39 +28,42 @@ namespace Atividades
 			numerosRomanos.Add("D", 500);
 			numerosRomanos.Add("M", 1000);
 
+			// int resultado = 0;
+			// int armazenaSoma = 0;
 
-			string numeroRomano;
-			numeroRomano = Console.ReadLine();
-
-			//Inicia conversão de numero string para inteiro
-			//int converterNumero = Int32.Parse(numeroRomano);
-			//Fim da conversão para número inteiro
-			
-
-			//Inicia a lista para ler a sequência dos números romanos
-			List<string> elementos = new List<string>();
-			
-			for (int i = 0; i <= numeroRomano.Length; i++) 
-			{
-			 	var valorLIdoDaCadeiaDeCaracteres = numeroRomano.Substring(0, 1);
-			 	elementos.Add(valorLIdoDaCadeiaDeCaracteres);
+			for (int i = 0; i < numero.Length; i++) {
+				var armazena = numero.Substring(i, 1);
+				guardaAlgarismo.Add(armazena);
+				soma = soma + numerosRomanos[guardaAlgarismo[i]];
+				
 			}
-			// Console.WriteLine(elementos[0]);
 
+
+			// for (int i = 0; i < guardaAlgarismo.Count -1; i++) {
+			// if (i > 0 && numerosRomanos[guardaAlgarismo[i-1]] < numerosRomanos[guardaAlgarismo[i]]) {
+					
+			// 	}
+			// }
 			
-			// Meu valor recebe o numero de entrada
-			var meuValor = numerosRomanos[numeroRomano];
-
-			var resposta = contagem[meuValor -1];
-
-			Console.WriteLine(resposta);
-
-			// if (meuValor == ) {
-			// 	Console.WriteLine("verdadeiro");
-			// } else {
-			// 	Console.WriteLine("falso");
+			// 
+			// 	if (numerosRomanos[guardaAlgarismo[i]] < numerosRomanos[guardaAlgarismo[i+1]]) {
+			// 		soma = numerosRomanos[guardaAlgarismo[i+1]] - numerosRomanos[guardaAlgarismo[i]];
+			// 	} else {
+			// 		soma = numerosRomanos[guardaAlgarismo[i]] + numerosRomanos[guardaAlgarismo[i+1]];
+			// 	}
 			// }
 
+			// if(guardaAlgarismo[0] == "X" || guardaAlgarismo[0] == "X" && numerosRomanos[guardaAlgarismo[1]] > numerosRomanos[guardaAlgarismo[0]]){
+			// 	valor = soma + numerosRomanos[guardaAlgarismo[1]]-numerosRomanos[guardaAlgarismo[0]];
+			// }
+			
+			//1º Regra – As letras I, X, C, M somente poderão ser repetidas por três vezes consecutivas.
+			if (numero.Contains("IIII") || numero.Contains("XXXX") || numero.Contains("CCCC") || numero.Contains("MMMM") ||
+					numero.Contains("VV") || numero.Contains("LL") || numero.Contains("DD")) {
+				 Console.WriteLine("Não é um número válido, por favor, tente novamente.");
+			} else {Console.WriteLine(soma);}
+
+			
 		}
 	}
 }
