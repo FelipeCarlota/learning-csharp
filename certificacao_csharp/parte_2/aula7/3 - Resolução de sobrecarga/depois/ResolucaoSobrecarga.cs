@@ -10,14 +10,19 @@ namespace certificacao_csharp_roteiro
     {
         public void Executar()
         {
-            // int int1 = 123;
-            // int int2 = 456;
+            int int1 = 123;
+            int int2 = 456;
 
-            // short short1 = 123;
-            // short short2 = 456;
+            short short1 = 123;
+            short short2 = 456;
 
-            // double double1 = 123.45;
-            // double double2 = 456.78;
+            double double1 = 123.45;
+            double double2 = 456.78;
+
+            Console.WriteLine (Somar(int1, int2));
+            Console.WriteLine (Somar(short1, short2));
+            Console.WriteLine (Somar(double1, double2));
+            Console.WriteLine (Somar("abc", "xyz"));
         }
 
         int Somar(int parcela1, int parcela2)
@@ -30,7 +35,11 @@ namespace certificacao_csharp_roteiro
             return (short)(parcela1 + parcela2);
         }
 
-        object Somar(object parcela1, object parcela2)
+        // object Somar(object parcela1, object parcela2)
+        // {
+        //     return (double)parcela1 + (double)parcela2;
+        // }
+        dynamic Somar(dynamic parcela1, dynamic parcela2)
         {
             return (double)parcela1 + (double)parcela2;
         }
