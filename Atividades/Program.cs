@@ -9,7 +9,7 @@ namespace Atividades
 		public static void Main(string[] args)
 		{
 
-			string numero = "XIV";
+			string numero = "CCIX";
 			// int valor = 0;
 			int soma = 0;
 
@@ -31,40 +31,48 @@ namespace Atividades
 			// int resultado = 0;
 			// int armazenaSoma = 0;
 
+
 			for (int i = 0; i < numero.Length; i++) {
-				var armazena = numero.Substring(i, 1);
-				guardaAlgarismo.Add(armazena);
-				soma = soma + numerosRomanos[guardaAlgarismo[i]];
-				
+				// soma = soma + numerosRomanos[numero.Substring(i, 1)];
+					var numeroPosterior = 0;
+					if (i < numero.Length -1) {
+						numeroPosterior = numerosRomanos[numero.Substring(i+1, 1)];
+					}
+				var numeroAnterior = numerosRomanos[numero.Substring(i, 1)];
+
+				if (numeroAnterior < numeroPosterior) {
+					soma -= numerosRomanos[numero.Substring(i, 1)];
+				} 
+				else 
+				{
+						soma += numerosRomanos[numero.Substring(i, 1)];
+				}
 			}
-
-
-			// for (int i = 0; i < guardaAlgarismo.Count -1; i++) {
-			// if (i > 0 && numerosRomanos[guardaAlgarismo[i-1]] < numerosRomanos[guardaAlgarismo[i]]) {
-					
-			// 	}
-			// }
-			
-			// 
-			// 	if (numerosRomanos[guardaAlgarismo[i]] < numerosRomanos[guardaAlgarismo[i+1]]) {
-			// 		soma = numerosRomanos[guardaAlgarismo[i+1]] - numerosRomanos[guardaAlgarismo[i]];
-			// 	} else {
-			// 		soma = numerosRomanos[guardaAlgarismo[i]] + numerosRomanos[guardaAlgarismo[i+1]];
-			// 	}
-			// }
-
-			// if(guardaAlgarismo[0] == "X" || guardaAlgarismo[0] == "X" && numerosRomanos[guardaAlgarismo[1]] > numerosRomanos[guardaAlgarismo[0]]){
-			// 	valor = soma + numerosRomanos[guardaAlgarismo[1]]-numerosRomanos[guardaAlgarismo[0]];
-			// }
 			
 			//1º Regra – As letras I, X, C, M somente poderão ser repetidas por três vezes consecutivas.
 			if (numero.Contains("IIII") || numero.Contains("XXXX") || numero.Contains("CCCC") || numero.Contains("MMMM") ||
 					numero.Contains("VV") || numero.Contains("LL") || numero.Contains("DD")) {
 				 Console.WriteLine("Não é um número válido, por favor, tente novamente.");
 			} else {Console.WriteLine(soma);}
-
-			
 		}
+
+		// private string RetornaNumeroPorExtenso(int teste, string teste2) {
+
+		// 	var numerosPorExtenso =  new Dictionary<int, string>();
+
+		// 	numerosPorExtenso.Add(1, "Um");
+		// 	numerosPorExtenso.Add(2, "Dois");
+		// 	numerosPorExtenso.Add(3, "Três");
+		// 	numerosPorExtenso.Add(4, "Quatro");
+		// 	numerosPorExtenso.Add(5, "Cinco");
+		// 	numerosPorExtenso.Add(6, "Seis");
+		// 	numerosPorExtenso.Add(7, "Sete");
+		// 	numerosPorExtenso.Add(8, "Oito");
+		// 	numerosPorExtenso.Add(9, "Nove");
+		// 	numerosPorExtenso.Add(10, "Dez");
+		// 	numerosPorExtenso.Add(500, "Quinhentos");
+		// 	numerosPorExtenso.Add(1000, "Mil");
+		// }
 	}
 }
 

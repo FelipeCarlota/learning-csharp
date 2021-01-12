@@ -1,290 +1,292 @@
-// dynamic[] contagem = {
-// 				"um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez",
-// 				"onze", "doze", "treze", "catorze", "quinze", "dezesseis", "dezessete", "dezoito", "dezenove", "vinte",
-// 				"trinta", "quarenta", "cinquenta", "sessenta", "setenta", "oitenta", "noventa", "cem",
-// 				"duzentos", "trezentos", "quatrocentos", "quinhentos", "seiscentos", "setecentos", "oitocentos", "novecentos", 
-// 				"mil"
-// 			};
+// // dynamic[] contagem = {
+// // 				"um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez",
+// // 				"onze", "doze", "treze", "catorze", "quinze", "dezesseis", "dezessete", "dezoito", "dezenove", "vinte",
+// // 				"trinta", "quarenta", "cinquenta", "sessenta", "setenta", "oitenta", "noventa", "cem",
+// // 				"duzentos", "trezentos", "quatrocentos", "quinhentos", "seiscentos", "setecentos", "oitocentos", "novecentos", 
+// // 				"mil"
+// // 			};
 
-// 			//relacionamento entre numero Romano com Números
-// 			var numerosRomanos =  new Dictionary<string, int>();
+// // 			//relacionamento entre numero Romano com Números
+// // 			var numerosRomanos =  new Dictionary<string, int>();
 
-// 			/* Dictionary
-// 			Propriedades:
+// // 			/* Dictionary
+// // 			Propriedades:
 
-// 			Count						Obtém o número total de elementos no Dictionary<TKey,TValue>.
-//  			IsReadOnly			Retorna um booleano indicando se o Dictionary<TKey,TValue> é somente leitura.
-//  			Item						Obtém ou define o elemento com a chave especificada no Dictionary<TKey,TValue>.
-//  			Keys						Retorna a coleção de chaves do Dictionary<TKey,TValue>
-//  			Values					Retorna a coleta de valores no Dictionary<TKey,TValue>.
-
-
-// 			Métodos:
-
-// 			Add							Adiciona um item à coleção Dictionary.
-// 			Add							Adiciona pares de valores-chave na coleção Dictionary<TKey,TValue>.
-// 			Remove					Remove a primeira ocorrência do item especificado do Dictionary<TKey,TValue>.
-// 			Remove					Remove o elemento com a chave especificada.
-// 			ContainsKey			Verifica se a chave especificada existe em Dictionary<TKey,TValue>.
-// 			ContainsValue		Verifica se o valor especificado existe em Dictionary<TKey,TValue>.
-// 			Clear						Remove todos os elementos do Dictionary<TKey,TValue>.
-// 			TryGetValue			Retorna true e atribui o valor com a chave especificada, se a chave não existir, retorna false.
-// 			*/
-
-// 			numerosRomanos.Add("I", 1);
-// 			numerosRomanos.Add("II", 2);
-// 			numerosRomanos.Add("III", 3);
-// 			numerosRomanos.Add("IV", 4);
-// 			numerosRomanos.Add("V", 5);
-// 			numerosRomanos.Add("VI", 6);
-// 			numerosRomanos.Add("VII", 7);
-// 			numerosRomanos.Add("VIII", 8);
-// 			numerosRomanos.Add("IX", 9);
-// 			numerosRomanos.Add("X", 10);
-// 			numerosRomanos.Add("XI", 11);
-// 			numerosRomanos.Add("XII", 12);
-// 			numerosRomanos.Add("XIII", 13);
-// 			numerosRomanos.Add("XIV", 14);
-// 			numerosRomanos.Add("XV", 14);
-// 			numerosRomanos.Add("XVI", 16);
-// 			numerosRomanos.Add("XVII", 17);
-// 			numerosRomanos.Add("XVIII", 18);
-// 			numerosRomanos.Add("XIX", 19);
-// 			numerosRomanos.Add("XX", 20);
-// 			numerosRomanos.Add("XXI", 21);
-// 			numerosRomanos.Add("XXII", 22);
-// 			numerosRomanos.Add("XXIII", 23);
-// 			numerosRomanos.Add("XXIV", 24);
-// 			numerosRomanos.Add("XXV", 25);
-// 			numerosRomanos.Add("XXVI", 26);
-// 			numerosRomanos.Add("XXVII", 27);
-// 			numerosRomanos.Add("XXVIII", 28);
-// 			numerosRomanos.Add("XXIX", 29);
-// 			numerosRomanos.Add("XXX", 30);
-// 			numerosRomanos.Add("XXXI", 31);
-// 			numerosRomanos.Add("XXXII", 32);
-// 			numerosRomanos.Add("XXXIII", 33);
-// 			numerosRomanos.Add("XXXIV", 34);
-// 			numerosRomanos.Add("XXXV", 35);
-// 			numerosRomanos.Add("XXXVI", 36);
-// 			numerosRomanos.Add("XXXVII", 37);
-// 			numerosRomanos.Add("XXXVIII", 38);
-// 			numerosRomanos.Add("XXXIX", 39);
-// 			numerosRomanos.Add("XL", 40);
-// 			numerosRomanos.Add("XLI", 41);
-// 			numerosRomanos.Add("XLII", 42);
-// 			numerosRomanos.Add("XLIII", 43);
-// 			numerosRomanos.Add("XLIV", 44);
-// 			numerosRomanos.Add("XLV", 45);
-// 			numerosRomanos.Add("XLVI", 46);
-// 			numerosRomanos.Add("XLVII", 47);
-// 			numerosRomanos.Add("XLVIII", 48);
-// 			numerosRomanos.Add("XLIX", 49);
-// 			numerosRomanos.Add("L", 50);
-// 			numerosRomanos.Add("LI", 51);
-// 			numerosRomanos.Add("LII", 52);
-// 			numerosRomanos.Add("LIII", 53);
-// 			numerosRomanos.Add("LIV", 54);
-// 			numerosRomanos.Add("LV", 55);
-// 			numerosRomanos.Add("LVI", 56);
-// 			numerosRomanos.Add("LVII", 57);
-// 			numerosRomanos.Add("LVIII", 58);
-// 			numerosRomanos.Add("LIX", 59);
-// 			numerosRomanos.Add("LX", 60);
-// 			numerosRomanos.Add("LXI", 61);
-// 			numerosRomanos.Add("LXII", 62);
-// 			numerosRomanos.Add("LXIII", 63);
-// 			numerosRomanos.Add("LXIV", 64);
-// 			numerosRomanos.Add("LXV", 65);
-// 			numerosRomanos.Add("LXVI", 660);
-// 			numerosRomanos.Add("LXVII", 67);
-// 			numerosRomanos.Add("LXVIII", 68);
-// 			numerosRomanos.Add("LXIX", 69);
-// 			numerosRomanos.Add("LXX", 70);
-// 			numerosRomanos.Add("LXXI", 71);
-// 			numerosRomanos.Add("LXXII", 72);
-// 			numerosRomanos.Add("LXXIII", 73);
-// 			numerosRomanos.Add("LXXIV", 74);
-// 			numerosRomanos.Add("LXXV", 75);
-// 			numerosRomanos.Add("LXXVI", 76);
-// 			numerosRomanos.Add("LXXVII", 77);
-// 			numerosRomanos.Add("LXXVIII", 78);
-// 			numerosRomanos.Add("LXXIX", 79);
-// 			numerosRomanos.Add("LXXX", 80);
-// 			numerosRomanos.Add("LXXXI", 81);
-// 			numerosRomanos.Add("LXXXII", 82);
-// 			numerosRomanos.Add("LXXXIII", 83);
-// 			numerosRomanos.Add("LXXXIV", 84);
-// 			numerosRomanos.Add("LXXXV", 85);
-// 			numerosRomanos.Add("LXXXVI", 86);
-// 			numerosRomanos.Add("LXXXVII", 87);
-// 			numerosRomanos.Add("LXXXVIII", 88);
-// 			numerosRomanos.Add("LXXXIX", 89);
-// 			numerosRomanos.Add("XC", 90);
-// 			numerosRomanos.Add("XCI", 91);
-// 			numerosRomanos.Add("XCII", 92);
-// 			numerosRomanos.Add("XCIII", 93);
-// 			numerosRomanos.Add("XCIV", 94);
-// 			numerosRomanos.Add("XCV", 95);
-// 			numerosRomanos.Add("XCVI", 96);
-// 			numerosRomanos.Add("XCVII", 97);
-// 			numerosRomanos.Add("XCVIII", 98);
-// 			numerosRomanos.Add("XCIX", 99);
-// 			numerosRomanos.Add("C", 100);
-// 			numerosRomanos.Add("CI", 101);
-// 			numerosRomanos.Add("CII", 102);
-// 			numerosRomanos.Add("CIII", 103);
-// 			numerosRomanos.Add("CIV", 104);
-// 			numerosRomanos.Add("CV", 105);
-// 			numerosRomanos.Add("CVI", 106);
-// 			numerosRomanos.Add("CVII", 107);
-// 			numerosRomanos.Add("CVIII", 108);
-// 			numerosRomanos.Add("CIX", 109);
-// 			numerosRomanos.Add("CX", 110);
-// 			numerosRomanos.Add("CXI", 111);
-// 			numerosRomanos.Add("CXII", 112);
-// 			numerosRomanos.Add("CXIII", 113);
-// 			numerosRomanos.Add("CXIV", 114);
-// 			numerosRomanos.Add("CXV", 115);
-// 			numerosRomanos.Add("CXVI", 116);
-// 			numerosRomanos.Add("CXVII", 117);
-// 			numerosRomanos.Add("CXVIII", 118);
-// 			numerosRomanos.Add("CXIX", 119);
-// 			numerosRomanos.Add("CXX", 120);
-// 			numerosRomanos.Add("CXXI", 121);
-// 			numerosRomanos.Add("CXXII", 122);
-// 			numerosRomanos.Add("CXXIII", 123);
-// 			numerosRomanos.Add("CXXIV", 124);
-// 			numerosRomanos.Add("CXXV", 125);
-// 			numerosRomanos.Add("CXXVI", 126);
-// 			numerosRomanos.Add("CXXVII", 127);
-// 			numerosRomanos.Add("CXXVIII", 128);
-// 			numerosRomanos.Add("CXXIX", 129);
-// 			numerosRomanos.Add("CXXX", 130);
-// 			numerosRomanos.Add("CXXXI", 131);
-// 			numerosRomanos.Add("CXXXII", 132);
-// 			numerosRomanos.Add("CXXXIII", 133);
-// 			numerosRomanos.Add("CXXXIV", 134);
-// 			numerosRomanos.Add("CXXXV", 135);
-// 			numerosRomanos.Add("CXXXVI", 136);
-// 			numerosRomanos.Add("CXXXVII", 137);
-// 			numerosRomanos.Add("CXXXVIII", 138);
-// 			numerosRomanos.Add("CXXXIX", 139);
-// 			numerosRomanos.Add("CXL", 140);
-// 			numerosRomanos.Add("CXLI", 141);
-// 			numerosRomanos.Add("CXLII", 142);
-// 			numerosRomanos.Add("CXLIII", 143);
-// 			numerosRomanos.Add("CXLIV", 144);
-// 			numerosRomanos.Add("CXLV", 145);
-// 			numerosRomanos.Add("CXLVI", 146);
-// 			numerosRomanos.Add("CXLVII", 147);
-// 			numerosRomanos.Add("CXLVIII", 148);
-// 			numerosRomanos.Add("CXLIX", 149);
-// 			numerosRomanos.Add("CL", 150);
-// 			numerosRomanos.Add("CLI", 151);
-// 			numerosRomanos.Add("CLII", 152);
-// 			numerosRomanos.Add("CLIII", 153);
-// 			numerosRomanos.Add("CLIV", 154);
-// 			numerosRomanos.Add("CLV", 155);
-// 			numerosRomanos.Add("CLVI", 156);
-// 			numerosRomanos.Add("CLVII", 157);
-// 			numerosRomanos.Add("CLVIII", 158);
-// 			numerosRomanos.Add("CLIX", 159);
-// 			numerosRomanos.Add("CLX", 160);
-// 			numerosRomanos.Add("CLXI", 161);
-// 			numerosRomanos.Add("CLXII", 162);
-// 			numerosRomanos.Add("CLXIII", 163);
-// 			numerosRomanos.Add("CLXIV", 164);
-// 			numerosRomanos.Add("CLXV", 165);
-// 			numerosRomanos.Add("CLXVI", 166);
-// 			numerosRomanos.Add("CLXVII", 167);
-// 			numerosRomanos.Add("CLXVIII", 168);
-// 			numerosRomanos.Add("CLXIX", 169);
-// 			numerosRomanos.Add("CLXX", 170);
-// 			numerosRomanos.Add("CLXXI", 171);
-// 			numerosRomanos.Add("CLXXII", 172);
-// 			numerosRomanos.Add("CLXXIII", 173);
-// 			numerosRomanos.Add("CLXXIV", 174);
-// 			numerosRomanos.Add("CLXXV", 175);
-// 			numerosRomanos.Add("CLXXVI", 176);
-// 			numerosRomanos.Add("CLXXVII", 177);
-// 			numerosRomanos.Add("CLXXVIII", 178);
-// 			numerosRomanos.Add("CLXXIX", 179);
-// 			numerosRomanos.Add("CLXXX", 180);
-// 			numerosRomanos.Add("CLXXXI", 181);
-// 			numerosRomanos.Add("CLXXXII", 182);
-// 			numerosRomanos.Add("CLXXXIII", 183);
-// 			numerosRomanos.Add("CLXXXIV", 184);
-// 			numerosRomanos.Add("CLXXXV", 185);
-// 			numerosRomanos.Add("CLXXXVI", 186);
-// 			numerosRomanos.Add("CLXXXVII", 187);
-// 			numerosRomanos.Add("CLXXXVIII", 188);
-// 			numerosRomanos.Add("CLXXXIX", 189);
-// 			numerosRomanos.Add("CXC", 190);
-// 			numerosRomanos.Add("CXCI", 191);
-// 			numerosRomanos.Add("CXCII", 192);
-// 			numerosRomanos.Add("CXCIII", 193);
-// 			numerosRomanos.Add("CXCIV", 194);
-// 			numerosRomanos.Add("CXCV", 195);
-// 			numerosRomanos.Add("CXCVI", 196);
-// 			numerosRomanos.Add("CXCVII", 197);
-// 			numerosRomanos.Add("CXCVIII", 198);
-// 			numerosRomanos.Add("CXCIX", 199);
-// 			numerosRomanos.Add("CC", 200);
-// 			numerosRomanos.Add("D", 500);
-// 			numerosRomanos.Add("M", 1000);
+// // 			Count						Obtém o número total de elementos no Dictionary<TKey,TValue>.
+// //  			IsReadOnly			Retorna um booleano indicando se o Dictionary<TKey,TValue> é somente leitura.
+// //  			Item						Obtém ou define o elemento com a chave especificada no Dictionary<TKey,TValue>.
+// //  			Keys						Retorna a coleção de chaves do Dictionary<TKey,TValue>
+// //  			Values					Retorna a coleta de valores no Dictionary<TKey,TValue>.
 
 
-// 			//Inicia a lista para ler a sequência dos números romanos
-// 			var valor = "XX";
-// 			var elementos = new List<string>();
+// // 			Métodos:
+
+// // 			Add							Adiciona um item à coleção Dictionary.
+// // 			Add							Adiciona pares de valores-chave na coleção Dictionary<TKey,TValue>.
+// // 			Remove					Remove a primeira ocorrência do item especificado do Dictionary<TKey,TValue>.
+// // 			Remove					Remove o elemento com a chave especificada.
+// // 			ContainsKey			Verifica se a chave especificada existe em Dictionary<TKey,TValue>.
+// // 			ContainsValue		Verifica se o valor especificado existe em Dictionary<TKey,TValue>.
+// // 			Clear						Remove todos os elementos do Dictionary<TKey,TValue>.
+// // 			TryGetValue			Retorna true e atribui o valor com a chave especificada, se a chave não existir, retorna false.
+// // 			*/
+
+//         /*
+//         numerosPorExtenso.Add(11, "Onze");
+// 			numerosPorExtenso.Add(12, "Doze");
+// 			numerosPorExtenso.Add(13, "Treze");
+// 			numerosPorExtenso.Add(14, "Quatorze");
+// 			numerosPorExtenso.Add(14, "Quinze");
+// 			numerosPorExtenso.Add(16, "Dezesseis");
+// 			numerosPorExtenso.Add(17, "Dezessete");
+// 			numerosPorExtenso.Add(18, "Dezoito");
+// 			numerosPorExtenso.Add(19, "Dezenove");
+// 			numerosPorExtenso.Add(20, "Vinte");
+// 			numerosPorExtenso.Add(21, "Vinte e um");
+// 			numerosPorExtenso.Add(22, "Vinte e dois");
+// 			numerosPorExtenso.Add(23, "Vinte e três");
+// 			numerosPorExtenso.Add(24, "Vinte e quatro");
+// 			numerosPorExtenso.Add(25, "Vinte e cinco");
+// 			numerosPorExtenso.Add(26, "Vinte e seis");
+// 			numerosPorExtenso.Add(27, "Vinte e sete");
+// 			numerosPorExtenso.Add(28, "Vinte e oito");
+// 			numerosPorExtenso.Add(29, "Vinte e nove");
+// 			numerosPorExtenso.Add(30, "Trinta");
+// 			numerosPorExtenso.Add(31, "Trinta e um");
+// 			numerosPorExtenso.Add(32, "Trinta e dois");
+// 			numerosPorExtenso.Add(33, "Trinta e três");
+// 			numerosPorExtenso.Add(34, "Trinta e quatro");
+// 			numerosPorExtenso.Add(35, "Trinta e cinco");
+// 			numerosPorExtenso.Add(36, "Trinta e seis");
+// 			numerosPorExtenso.Add(37, "Trinta e sete");
+// 			numerosPorExtenso.Add(38, "Trinta e oito");
+// 			numerosPorExtenso.Add(39, "Trinta e nove");
+// 			numerosPorExtenso.Add(40, "Quarenta");
+// 			numerosPorExtenso.Add(41, "Quarenta e um");
+// 			numerosPorExtenso.Add(42, "Quarenta e dois");
+// 			numerosPorExtenso.Add(43, "Quarenta e três");
+// 			numerosPorExtenso.Add(44, "Quarenta e quatro");
+// 			numerosPorExtenso.Add(45, "Quarenta e cinco");
+// 			numerosPorExtenso.Add(46, "Quarenta e seis");
+// 			numerosPorExtenso.Add(47, "Quarenta e sete");
+// 			numerosPorExtenso.Add(48, "Quarenta e oito");
+// 			numerosPorExtenso.Add(49, "Quarenta e nove");
+// 			numerosPorExtenso.Add(50, "Cinquenta");
+// 			numerosPorExtenso.Add(51, "Cinquenta e um");
+// 			numerosPorExtenso.Add(52, "Cinquenta e dois");
+// 			numerosPorExtenso.Add(53, "Cinquenta e três");
+// 			numerosPorExtenso.Add(54, "Cinquenta e quatro");
+// 			numerosPorExtenso.Add(55, "Cinquenta e cinco");
+// 			numerosPorExtenso.Add(56, "Cinquenta e seis");
+// 			numerosPorExtenso.Add(57, "Cinquenta e sete");
+// 			numerosPorExtenso.Add(58, "Cinquenta e oito");
+// 			numerosPorExtenso.Add(59, "Cinquenta e nove");
+// 			numerosPorExtenso.Add(60, "Sessenta");
+// 			numerosPorExtenso.Add(61, "Sessenta e um");
+// 			numerosPorExtenso.Add(62, "Sessenta e dois");
+// 			numerosPorExtenso.Add(63, "Sessenta e três");
+// 			numerosPorExtenso.Add(64, "Sessenta e quatro");
+// 			numerosPorExtenso.Add(65, "Sessenta e cinco");
+// 			numerosPorExtenso.Add(66, "Sessenta e seis");
+// 			numerosPorExtenso.Add(67, "Sessenta e sete");
+// 			numerosPorExtenso.Add(68, "Sessenta e oito");
+// 			numerosPorExtenso.Add(69, "Sessenta e nove");
+// 			numerosPorExtenso.Add(70, "Setenta");
+// 			numerosPorExtenso.Add(71, "Setenta e um");
+// 			numerosPorExtenso.Add(72, "Setenta e dois");
+// 			numerosPorExtenso.Add(73, "Setenta e três");
+// 			numerosPorExtenso.Add(74, "Setenta e quatro");
+// 			numerosPorExtenso.Add(75, "Setenta e cinco");
+// 			numerosPorExtenso.Add(76, "Setenta e seis");
+// 			numerosPorExtenso.Add(77, "Setenta e sete");
+// 			numerosPorExtenso.Add(78, "Stenta e oito");
+// 			numerosPorExtenso.Add(79, "Setenta e nove");
+// 			numerosPorExtenso.Add(80, "Oitenta");
+// 			numerosPorExtenso.Add(81, "Oitenta e um");
+// 			numerosPorExtenso.Add(82, "Oitenta e dois");
+// 			numerosPorExtenso.Add(83, "Oitenta e três");
+// 			numerosPorExtenso.Add(84, "Oitenta e quatro");
+// 			numerosPorExtenso.Add(85, "Oitenta e cinco");
+// 			numerosPorExtenso.Add(86, "Oitenta e seis");
+// 			numerosPorExtenso.Add(87, "Oitenta e sete");
+// 			numerosPorExtenso.Add(88, "Oitenta e oito");
+// 			numerosPorExtenso.Add(89, "Oitenta e nove");
+// 			numerosPorExtenso.Add(90, "Noventa");
+// 			numerosPorExtenso.Add(91, "Noventa e um");
+// 			numerosPorExtenso.Add(92, "Noventa e dois");
+// 			numerosPorExtenso.Add(93, "Noventa e três");
+// 			numerosPorExtenso.Add(94, "Noventa e quatro");
+// 			numerosPorExtenso.Add(95, "Noventa e cinco");
+// 			numerosPorExtenso.Add(96, "Noventa e seis");
+// 			numerosPorExtenso.Add(97, "Noventa e sete");
+// 			numerosPorExtenso.Add(98, "Noventa e oito");
+// 			numerosPorExtenso.Add(99, "Noventa e nove");
+// 			numerosPorExtenso.Add(100, "Cem");
+// 			numerosPorExtenso.Add(101, "Cento e um");
+// 			numerosPorExtenso.Add(102, "Cento e dois");
+// 			numerosPorExtenso.Add(103, "Cento e três");
+// 			numerosPorExtenso.Add(104, "Cento e quatro");
+// 			numerosPorExtenso.Add(105, "Cento e cinco");
+// 			numerosPorExtenso.Add(106, "Cento e seis");
+// 			numerosPorExtenso.Add(107, "Cento e sete");
+// 			numerosPorExtenso.Add(108, "Cento e oito");
+// 			numerosPorExtenso.Add(109, "Cento e nove");
+// 			numerosPorExtenso.Add(110, "Cento e dez");
+// 			numerosPorExtenso.Add(111, "Cento e onze");
+// 			numerosPorExtenso.Add(112, "Cento e doze");
+// 			numerosPorExtenso.Add(113, "Cento e treze");
+// 			numerosPorExtenso.Add(114, "Cento e quatorze");
+// 			numerosPorExtenso.Add(115, "Cento e quinze");
+// 			numerosPorExtenso.Add(116, "Cento e dezesseis");
+// 			numerosPorExtenso.Add(117, "Cento e dezessete");
+// 			numerosPorExtenso.Add(118, "Cento e dezoito");
+// 			numerosPorExtenso.Add(119, "Cento e dezenove");
+// 			numerosPorExtenso.Add(120, "Cento e vinte");
+// 			numerosPorExtenso.Add(121, "Cento e vinte e um");
+// 			numerosPorExtenso.Add(122, "Cento e vinte e dois");
+// 			numerosPorExtenso.Add(123, "Cento e vinte e três");
+// 			numerosPorExtenso.Add(124, "Cento e vinte  equatro");
+// 			numerosPorExtenso.Add(125, "Cento e vinte e cinco");
+// 			numerosPorExtenso.Add(126, "Cento e vinte e seis");
+// 			numerosPorExtenso.Add(127, "Cento e vinte e sete");
+// 			numerosPorExtenso.Add(128, "Cento e vinte e oito");
+// 			numerosPorExtenso.Add(129, "Cento e vinte e nove");
+// 			numerosPorExtenso.Add(130, "Cento e trinta");
+// 			numerosPorExtenso.Add(131, "Cento e trinta e um");
+// 			numerosPorExtenso.Add(132, "Cento e trinta e dois");
+// 			numerosPorExtenso.Add(133, "Cento e trinta e três");
+// 			numerosPorExtenso.Add(134, "Cento e trinta e quatro");
+// 			numerosPorExtenso.Add(135, "Cento e trinta e cinco");
+// 			numerosPorExtenso.Add(136, "Cento e trinta e seis");
+// 			numerosPorExtenso.Add(137, "Cento e trinta e sete");
+// 			numerosPorExtenso.Add(138, "Cento e trinta e oito");
+// 			numerosPorExtenso.Add(139, "Cento e trinta e nove");
+// 			numerosPorExtenso.Add(140, "Quarenta");
+// 			numerosPorExtenso.Add(141, "Cento e quarenta e um");
+// 			numerosPorExtenso.Add(142, "Cento e quarenta e dois");
+// 			numerosPorExtenso.Add(143, "Cento e quarenta e três");
+// 			numerosPorExtenso.Add(144, "Cento e quarenta e quatro");
+// 			numerosPorExtenso.Add(145, "Cento e quarenta e cinco");
+// 			numerosPorExtenso.Add(146, "Cento e quarenta e seis");
+// 			numerosPorExtenso.Add(147, "Cento e quarenta e sete");
+// 			numerosPorExtenso.Add(148, "Cento e quarenta e oito");
+// 			numerosPorExtenso.Add(149, "Cento e quarenta e nove");
+// 			numerosPorExtenso.Add(150, "Cinquenta");
+// 			numerosPorExtenso.Add(151, "Cento e cinquenta e um");
+// 			numerosPorExtenso.Add(152, "Cento e cinquenta e dois");
+// 			numerosPorExtenso.Add(153, "Cento e cinquenta e três");
+// 			numerosPorExtenso.Add(154, "Cento e cinquenta e quatro");
+// 			numerosPorExtenso.Add(155, "Cento e cinquenta e cinco");
+// 			numerosPorExtenso.Add(156, "Cento e cinquenta e seis");
+// 			numerosPorExtenso.Add(157, "Cento e cinquenta e sete");
+// 			numerosPorExtenso.Add(158, "Cento e cinquenta e oito");
+// 			numerosPorExtenso.Add(159, "Cento e cinquenta e nove");
+// 			numerosPorExtenso.Add(160, "Sessenta");
+// 			numerosPorExtenso.Add(161, "Cento e sessenta e um");
+// 			numerosPorExtenso.Add(162, "Cento e sessenta e dois");
+// 			numerosPorExtenso.Add(163, "Cento e sessenta e três");
+// 			numerosPorExtenso.Add(164, "Cento e sessenta e quatro");
+// 			numerosPorExtenso.Add(165, "Cento e sessenta e cinco");
+// 			numerosPorExtenso.Add(166, "Cento e sessenta e seis");
+// 			numerosPorExtenso.Add(167, "Cento e sessenta e sete");
+// 			numerosPorExtenso.Add(168, "Cento e sessenta e oito");
+// 			numerosPorExtenso.Add(169, "Cento e sessenta e nove");
+// 			numerosPorExtenso.Add(170, "Setenta");
+// 			numerosPorExtenso.Add(171, "Cento e setenta e um");
+// 			numerosPorExtenso.Add(172, "Cento e setenta e dois");
+// 			numerosPorExtenso.Add(173, "Cento e setenta e três");
+// 			numerosPorExtenso.Add(174, "Cento e setenta e quatro");			
+// 			numerosPorExtenso.Add(175, "Cento e setenta e cinco");
+// 			numerosPorExtenso.Add(176, "Cento e setenta e seis");
+// 			numerosPorExtenso.Add(177, "Cento e setenta e sete");
+// 			numerosPorExtenso.Add(178, "Cento e setenta e oito");
+// 			numerosPorExtenso.Add(179, "Cento e setenta e nove");
+// 			numerosPorExtenso.Add(180, "Oitenta");
+// 			numerosPorExtenso.Add(181, "Cento e oitenta e um");
+// 			numerosPorExtenso.Add(182, "Cento e oitenta e dois");
+// 			numerosPorExtenso.Add(183, "Cento e oitenta e três");
+// 			numerosPorExtenso.Add(184, "Cento e oitenta e quatro");
+// 			numerosPorExtenso.Add(185, "Cento e oitenta e cinco");
+// 			numerosPorExtenso.Add(186, "Cento e oitenta e seis");
+// 			numerosPorExtenso.Add(187, "Cento e oitenta e sete");
+// 			numerosPorExtenso.Add(188, "Cento e oitenta e oito");
+// 			numerosPorExtenso.Add(189, "Cento e oitenta e nove");
+// 			numerosPorExtenso.Add(190, "Noventa");
+// 			numerosPorExtenso.Add(191, "Cento e noventa e um");
+// 			numerosPorExtenso.Add(192, "Cento e noventa e dois");
+// 			numerosPorExtenso.Add(193, "Cento e noventa e três");
+// 			numerosPorExtenso.Add(194, "Cento e noventa e quatro");
+// 			numerosPorExtenso.Add(195, "Cento e noventa e cinco");
+// 			numerosPorExtenso.Add(196, "Cento e noventa e seis");
+// 			numerosPorExtenso.Add(197, "Cento e noventa e sete");
+// 			numerosPorExtenso.Add(198, "Cento e noventa e oito");
+// 			numerosPorExtenso.Add(199, "Cento e noventa e nove");
+// 			numerosPorExtenso.Add(200, "Duzentos");
+// 			numerosPorExtenso.Add(201, "Duzentos e um");
+// 			numerosPorExtenso.Add(202, "Duzentos e dois");
+// 			numerosPorExtenso.Add(203, "Duzentos e três");
+// 			numerosPorExtenso.Add(204, "Duzentos e quatro");
+// 			numerosPorExtenso.Add(205, "Duzentos e cinco");
+// 			numerosPorExtenso.Add(206, "Duzentos e seis");
+// 			numerosPorExtenso.Add(207, "Duzentos e sete");
+// 			numerosPorExtenso.Add(208, "Duzentos e oito");
+// 			numerosPorExtenso.Add(209, "Duzentos e nove");
+// 			numerosPorExtenso.Add(210, "Duzentos");
+// 			numerosPorExtenso.Add(211, "Duzentos e onze");
+// 			numerosPorExtenso.Add(212, "Duzentos e doze");
+// 			numerosPorExtenso.Add(213, "Duzentos e treze");
+// 			numerosPorExtenso.Add(214, "Duzentos e catorze");
+// 			numerosPorExtenso.Add(215, "Duzentos cinco");
+// 			numerosPorExtenso.Add(216, "Duzentos seis");
+// 			numerosPorExtenso.Add(217, "Duzentos sete");
+// 			numerosPorExtenso.Add(218, "Duzentos oito");
+// 			numerosPorExtenso.Add(219, "Duzentos nove");
+
+//         */
+
+
+// // 			//na a sta para er a sequêna dos números romanos
+// // 			ar vaor = "XX";
+// // 			var eementos = new ist<string>();
 			
-// 			for (int i = 0; i <= valor.Length; i++) 
-// 			{
-// 				var x = valor.Substring(0, i);
-// 				elementos.Add(x);
-// 			}
+// // 			for (int i = 0; i <= vaor.Length; i++) 
+// // 			{
+// // 				var x = valor.Substring(0, i);
+// // 				elementos.Add(x);
+// // 			}
 
-// 			// Meu valor recebe o numero de entrada
-// 			var meuValor = numerosRomanos[valor];
-// 			//Busca a resposta por extenso em contagem
-// 			var resposta = contagem[meuValor -1];
-// 			Console.WriteLine(resposta);
+// // 			// Meu valor reebe o numero de entrada
+// // 			var meuValor = numerosRomanos[valor];
+// // 			//Busa a resposta por extenso em ontagem
+// // 			var resposta = contagem[meuValor -1];
+// // 			Console.WriteLine(resposta);
 
 
-// 			// string numeroRomano;
-// 			// // numeroRomano = Console.ReadLine();
-
-			
-			
+// // 			// string numeroRomano;
+// // 			// // numeroRomano = Console.ReadLine();
 
 			
-			
+// // 			// var meuValor = numerosRomanos[valor];
 
-      
-			
-			
-// 			// var meuValor = numerosRomanos[valor];
+// // 			// // 
 
-// 			// // 
+// // 			// 
 
-// 			// 
+// // 			// if (meuValor == ) {
+// // 			// 	Console.WriteLine("verdadeiro");
+// // 			// } else {
+// // 			// 	Console.WriteLine("falso");
+// // 			// }
 
-// 			// if (meuValor == ) {
-// 			// 	Console.WriteLine("verdadeiro");
-// 			// } else {
-// 			// 	Console.WriteLine("falso");
-// 			// }
+// // 		}
 
-// 		}
+// // 		private int TransformaRomanoEmInteiro(string valor) {
+// // 			//Inicia conversão de numero string para inteiro
+// // 			int converterNumero = Int32.Parse(valor);
+// // 			//Fim da conversão para número inteiro
+// // 			return converterNumero;
+// // 		}
 
-// 		private int TransformaRomanoEmInteiro(string valor) {
-// 			//Inicia conversão de numero string para inteiro
-// 			int converterNumero = Int32.Parse(valor);
-// 			//Fim da conversão para número inteiro
-// 			return converterNumero;
-// 		}
-
-// 		private string EscreveInteiroEmExtenso(int inteiro) {
-// 			return "string";
-// 		}
+// // 		private string EscreveInteiroEmExtenso(int inteiro) {
+// // 			return "string";
+// // 		}

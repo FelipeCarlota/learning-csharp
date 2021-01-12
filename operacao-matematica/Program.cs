@@ -18,8 +18,8 @@ namespace operacao_matematica
             int multiplicacao = matematica.Multiplica(90,112);
             Console.WriteLine(multiplicacao);
             
-            int exponenciacao = matematica.Exponencia(3,3);
-            Console.WriteLine(multiplicacao);
+            int exponenciacao = matematica.Exponencia(6,6);
+            Console.WriteLine(exponenciacao);
 
         }
         class Matematica {
