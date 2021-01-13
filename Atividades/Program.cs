@@ -9,7 +9,7 @@ namespace Atividades
 		public static void Main(string[] args)
 		{
 
-			string numero = "MCX";
+			string numero = "MMCX";
 
 			// int valor = 0;
 			int soma = 0;
@@ -128,9 +128,9 @@ namespace Atividades
 					{
 						escritoPorExtenso = " mil " + escritoPorExtenso;
 					}
-					if (aux > 1000)
+					if (aux >= 1000)
 					{
-					//	escritoPorExtenso = numeroPorExtenso[valorLido.ToString()] +  " mil " + escritoPorExtenso + " e " + escritoPorExtenso;
+						escritoPorExtenso = numeroPorExtenso[valorLido.ToString()] +  " mil, " + escritoPorExtenso ;
 					}
 					else
 					{
