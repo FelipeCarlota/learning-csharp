@@ -7,8 +7,19 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "operacao-matematica/1.0.0": {
+        "dependencies": {
+          "AWSSDK.Core": "3.5.1.59"
+        },
         "runtime": {
           "operacao-matematica.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.5.1.59": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.5.1.59"
+          }
         }
       }
     }
@@ -18,6 +29,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AWSSDK.Core/3.5.1.59": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rKac8Rv/3fihbWW1ysJpi1qYJWND//0rrKW73k+g3VQCye5FWOazGTKwel9cG95uJDHOD38opgPwwe1EWqbcMg==",
+      "path": "awssdk.core/3.5.1.59",
+      "hashPath": "awssdk.core.3.5.1.59.nupkg.sha512"
     }
   }
 }

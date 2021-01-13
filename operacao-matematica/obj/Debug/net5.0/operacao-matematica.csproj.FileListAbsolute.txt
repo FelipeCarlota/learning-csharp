@@ -13,3 +13,5 @@
 /Users/felipecarlota/projetos/learning-csharp/operacao-matematica/obj/Debug/net5.0/ref/operacao-matematica.dll
 /Users/felipecarlota/projetos/learning-csharp/operacao-matematica/obj/Debug/net5.0/operacao-matematica.pdb
 /Users/felipecarlota/projetos/learning-csharp/operacao-matematica/obj/Debug/net5.0/operacao-matematica.genruntimeconfig.cache
+/Users/felipecarlota/projetos/learning-csharp/operacao-matematica/bin/Debug/net5.0/AWSSDK.Core.dll
+/Users/felipecarlota/projetos/learning-csharp/operacao-matematica/obj/Debug/net5.0/operacao-matematica.csproj.CopyComplete
