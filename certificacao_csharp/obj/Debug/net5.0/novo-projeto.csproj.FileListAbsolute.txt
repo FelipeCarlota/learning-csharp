@@ -48,3 +48,5 @@ C:/Users/felip/Documents/csharp/certificacao_csharp/obj/Debug/net5.0/novo-projet
 /Users/felipecarlota/projetos/learning-csharp/certificacao_csharp/obj/Debug/net5.0/ref/novo-projeto.dll
 /Users/felipecarlota/projetos/learning-csharp/certificacao_csharp/obj/Debug/net5.0/novo-projeto.pdb
 /Users/felipecarlota/projetos/learning-csharp/certificacao_csharp/obj/Debug/net5.0/novo-projeto.genruntimeconfig.cache
+/Users/felipecarlota/projetos/learning-csharp/certificacao_csharp/bin/Debug/net5.0/Newtonsoft.Json.dll
+/Users/felipecarlota/projetos/learning-csharp/certificacao_csharp/obj/Debug/net5.0/novo-projeto.csproj.CopyComplete
