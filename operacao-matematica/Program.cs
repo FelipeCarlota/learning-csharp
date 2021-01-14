@@ -9,16 +9,16 @@ namespace operacao_matematica
 
             Matematica matematica = new Matematica();
             
-            // int soma = matematica.Soma(366,40);
+            // int soma = matematica.Soma(-20,-60);
             // Console.WriteLine(soma);
 
-            // int subtracao = matematica.Subtrai(370,40);
+            // int subtracao = matematica.Subtrai(-7,3);
             // Console.WriteLine(subtracao);
 
-            int multiplicacao = matematica.Multiplica(5,5);
-            Console.WriteLine(multiplicacao);
+            // int multiplicacao = matematica.Multiplica(-76123,-5);
+            // Console.WriteLine(multiplicacao);
 
-            int exponenciacao = matematica.Exponencia(2,3);
+            int exponenciacao = matematica.Exponencia(578,2);
             Console.WriteLine(exponenciacao);
 
         }
@@ -26,24 +26,30 @@ namespace operacao_matematica
 
             // Soma dois números
             public int Soma(int primeiroValor, int segundoValor) {
-                return primeiroValor + segundoValor;
+                int soma = 0;
+                
+                soma = primeiroValor + segundoValor;
+
+                return soma;
             }
 
 
             // Subtrai dois números
             public int Subtrai(int primeiroValor, int segundoValor) {   
                 int cont = 0;
-                if(primeiroValor < segundoValor){ 
-                    for (int i = primeiroValor; i < segundoValor; i++) {
-                        cont++;
-                    }
-                } 
-                else 
+                
+                // Subtração normal
+
+                for (int i = segundoValor; i < primeiroValor; i++)
                 {
-                    for (int i = segundoValor; i < primeiroValor; i++) {
-                        cont++;
-                    }
+                    cont++;
                 }
+
+                for (int i = primeiroValor; i < segundoValor; i++)
+                {
+                    cont--;
+                }
+
                 return cont;
             }
 
@@ -52,24 +58,76 @@ namespace operacao_matematica
                 // var calculo = 0;
                 var multiplicacao = 0;
 
+                // Multiplica positivos
                 for (int i = 0; i < multiplicador; i++) {
                     multiplicacao = multiplicacao + multiplicando;  
                 }
+                
+                // Multiplica dois números negativos
+
+                if (multiplicando < 0 && multiplicador < 0)
+                {
+                    int resultado = 0;
+                    int cont = 0;
+                    // int buscaValor = 0;
+                    for (int i = 0; i > multiplicador; i--) {
+                        resultado = resultado + multiplicando; 
+                    }
+                    for (int j = 0; j > resultado; j--) 
+                    {
+                        cont++;
+                    }
+                    multiplicacao = cont;
+                }
+
+                // Multiplica com um multiplicando negativo
+                if (multiplicando < 0 && multiplicador > 0)
+                {
+                    for (int i = 0; i > multiplicador; i++) 
+                    {
+                        multiplicacao = multiplicacao + multiplicando;  
+                    }
+                } 
+                // Multiplica com um multiplicador negativo
+                else if (multiplicando > 0 && multiplicador < 0) 
+                {
+                    int resultado = 0;
+                    int cont = 0;
+                    for (int i = 0; i > multiplicador; i--) 
+                    {
+                        resultado = resultado + multiplicando;  
+                    }
+
+                    for (int j = 0; j < resultado; j++) 
+                    {
+                        cont--;
+                    }
+                    multiplicacao = cont;
+                }
+
 
                 return multiplicacao;
             }
             public int Exponencia(int numeroBase, int expoente) {
-        
+                
+                int resultadoFinal = 0;
+
                 var resultado = numeroBase;
                 for (int cont = 0; cont < expoente -1; cont++) {
                     resultado = Multiplica(resultado, numeroBase);
-                    //aux = resultado;
-                    // for (int i = 0; i < numeroBase; i++) {
-                    //  resultado = resultado + numeroBase;  
-                    // }
                 }
 
-                return resultado;
+                if (numeroBase < 0)
+                {
+                    int aux = Subtrai(resultado, resultado);
+                    return resultadoFinal = Subtrai(aux, resultado);
+                    
+                }
+                else
+                {
+                    return resultado;
+                }
+                
             }
         }
 
