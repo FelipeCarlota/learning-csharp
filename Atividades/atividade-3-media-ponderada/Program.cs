@@ -18,7 +18,7 @@ namespace atividade_3_media_ponderada
 
             MediaPonderada media = new MediaPonderada();
 
-            double resultadoMedia = media.Media(-2, 3, 5, 7);
+            double resultadoMedia = media.Media(10, 6.5, 7, 8.25);
             string resposta = "";
             
             if (resultadoMedia == 0)
@@ -72,22 +72,26 @@ namespace atividade_3_media_ponderada
                         {
                             calculaNota = primeiraNota * (i+1);
                             nota1 = calculaNota;
+                            Console.WriteLine(nota1);
                         }
                         if (i == 1)
                         {
                             calculaNota = segundaNota * (i+1);
                             nota2 = calculaNota;
+                            Console.WriteLine(nota2);
                         }
-                        if (i == 3)
+                        if (i == 2)
                         {
                             calculaNota = terceiraNota * (i+1);
                             nota3 = calculaNota;
+                            Console.WriteLine(nota3);
                             
                         }
-                        if (i == 4)
+                        if (i == 3)
                         {
                             calculaNota = quartaNota * (i+1);
                             nota4 = calculaNota;
+                            Console.WriteLine(nota4);
                         }
                         cont++;
                         divisor = divisor + (cont - 1);
