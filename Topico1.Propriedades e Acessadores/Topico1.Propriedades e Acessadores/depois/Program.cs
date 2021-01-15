@@ -27,6 +27,14 @@ namespace Topico1
 
     class Funcionario
     {
+        public Program(decimal salario;)
+        {
+            if (value < 0)
+            {
+                throw new ArgumentOutOfRangeException("O salário não pode ser negativo");
+            }
+            this.salario = salario;
+        }
         decimal salario;
 
         public decimal salario {//encapsulacao
@@ -34,14 +42,26 @@ namespace Topico1
             {
                 return salario;
             }
-            set
-            {
-                if (value < 0)
-                {
-                    throw new ArgumentOutOfRangeException("O salário não pode ser negativo");
-                }
-                salario = value;
-            }
+            // set
+            // {
+            //     if (value < 0)
+            //     {
+            //         throw new ArgumentOutOfRangeException("O salário não pode ser negativo");
+            //     }
+            //     salario = value;
+            // }
         }
+
+        // private decimal salario;
+        // public decimal salario
+        // {
+        //     get { return salario; }
+        //     set { myVar = value; }
+        // }
+
+        //Propriedade auto implementada
+        // uma maneira de declarar uma propriedade com get e set sem precisar mencionar o campo.
+        // public decimal Salario{get; set;}
+        
     }
 }
