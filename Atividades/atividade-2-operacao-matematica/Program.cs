@@ -37,7 +37,7 @@ namespace operacao_matematica
             // Subtrai dois números
             public int Subtrai(int primeiroValor, int segundoValor) {   
                 int cont = 0;
-                
+                int aux = -1;
                 // Subtração normal
 
                 for (int i = segundoValor; i < primeiroValor; i++)
@@ -47,7 +47,7 @@ namespace operacao_matematica
 
                 for (int i = primeiroValor; i < segundoValor; i++)
                 {
-                    cont--;
+                    cont = cont + aux;
                 }
 
                 return cont;
@@ -57,6 +57,7 @@ namespace operacao_matematica
             public int Multiplica(int multiplicando, int multiplicador) {
                 // var calculo = 0;
                 var multiplicacao = 0;
+                int aux = -1;
 
                 // Multiplica positivos
                 for (int i = 0; i < multiplicador; i++) {
@@ -70,10 +71,10 @@ namespace operacao_matematica
                     int resultado = 0;
                     int cont = 0;
                     // int buscaValor = 0;
-                    for (int i = 0; i > multiplicador; i--) {
+                    for (int i = 0; i > multiplicador; i += aux) {
                         resultado = resultado + multiplicando; 
                     }
-                    for (int j = 0; j > resultado; j--) 
+                    for (int j = 0; j > resultado; j += aux) 
                     {
                         cont++;
                     }
@@ -93,14 +94,14 @@ namespace operacao_matematica
                 {
                     int resultado = 0;
                     int cont = 0;
-                    for (int i = 0; i > multiplicador; i--) 
+                    for (int i = 0; i > multiplicador; i += aux) 
                     {
                         resultado = resultado + multiplicando;  
                     }
 
                     for (int j = 0; j < resultado; j++) 
                     {
-                        cont--;
+                        cont = cont + aux;
                     }
                     multiplicacao = cont;
                 }
@@ -112,7 +113,6 @@ namespace operacao_matematica
             public int Exponencia(int numeroBase, int expoente) {
                 
                 int resultadoFinal = 0;
-
                 var resultado = numeroBase;
                 for (int cont = 0; cont < expoente -1; cont++) {
                     resultado = Multiplica(resultado, numeroBase);
