@@ -112,7 +112,7 @@ namespace operacao_matematica
 
             public int Exponencia(int numeroBase, int expoente) {
                 
-                int resultadoFinal = 0;
+                // int resultadoFinal = 0;
                 var resultado = numeroBase;
                 for (int cont = 0; cont < expoente -1; cont++) {
                     resultado = Multiplica(resultado, numeroBase);
