@@ -9,16 +9,16 @@ namespace operacao_matematica
 
             Matematica matematica = new Matematica();
             
-            // int soma = matematica.Soma(-20,-60);
-            // Console.WriteLine(soma);
+            int soma = matematica.Soma(-20,-60);
+            Console.WriteLine(soma);
 
-            // int subtracao = matematica.Subtrai(-7,3);
-            // Console.WriteLine(subtracao);
+            int subtracao = matematica.Subtrai(-7,3);
+            Console.WriteLine(subtracao);
 
-            // int multiplicacao = matematica.Multiplica(-9,3);
-            // Console.WriteLine(multiplicacao);
+            int multiplicacao = matematica.Multiplica(-9,3);
+            Console.WriteLine(multiplicacao);
 
-            int exponenciacao = matematica.Exponencia(9,9);
+            int exponenciacao = matematica.Exponencia(-9,3);
             Console.WriteLine(exponenciacao);
 
         }
@@ -74,6 +74,7 @@ namespace operacao_matematica
                     for (int i = 0; i > multiplicador; i += aux) {
                         resultado = resultado + multiplicando; 
                     }
+
                     for (int j = 0; j > resultado; j += aux) 
                     {
                         cont++;
@@ -111,24 +112,51 @@ namespace operacao_matematica
             }
 
             public int Exponencia(int numeroBase, int expoente) {
-                
+
                 // int resultadoFinal = 0;
                 var resultado = numeroBase;
                 for (int cont = 0; cont < expoente -1; cont++) {
                     resultado = Multiplica(resultado, numeroBase);
                 }
 
-                if (numeroBase < 0 && expoente % 2 == 0)
-                {
-                    int resultadoAux = Subtrai(resultado, resultado);
-                    resultado = Subtrai(resultadoAux, resultado);
-                }
+                // //Chamo a função isPar
+                // VerificaPar verificaNumero = new VerificaPar();
+                // int isPar = verificaNumero.isPar(expoente);
+
+                // if (numeroBase < 0 && isPar == 0)
+                // {
+                //     int resultadoAux = Subtrai(resultado, resultado);
+                //     resultado = Subtrai(resultadoAux, resultado);
+                // }
 
 
                 return resultado;
                 
             }
         }
+
+        // class VerificaPar
+        // {
+        //     public int isPar( int numero)
+        //     {
+        //         int isPar = 0;
+        //         int verificador = -2;
+        //         int aux = -1;
+
+        //         for (int i = numero; i > 1; i+=aux)
+        //         {
+        //             isPar = i + verificador;
+                    
+        //             if (isPar == 1)
+        //             {
+        //                 break;
+        //             }
+        //         }
+
+
+        //         return isPar;
+        //     }
+        // }
 
     }
     

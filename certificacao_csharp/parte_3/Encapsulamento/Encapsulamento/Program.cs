@@ -13,6 +13,10 @@ namespace Encapsulamento
 
             funcionario.salario = -1200;
             Console.WriteLine(funcionario.salario);
+            
+            // funcionario.salario = -1200;
+            funcionario.Salario = 1200;
+            Console.WriteLine(funcionario.Salario);
 
         }
     }

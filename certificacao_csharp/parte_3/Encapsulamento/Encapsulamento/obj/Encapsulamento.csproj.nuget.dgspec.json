@@ -14,7 +14,7 @@
         "outputPath": "/Users/felipecarlota/projetos/learning-csharp/certificacao_csharp/parte_3/Encapsulamento/Encapsulamento/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/felipecarlota/.config/NuGet/NuGet.Config"
+          "/Users/felipecarlota/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
