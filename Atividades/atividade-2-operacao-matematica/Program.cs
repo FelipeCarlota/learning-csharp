@@ -9,16 +9,16 @@ namespace operacao_matematica
 
             Matematica matematica = new Matematica();
             
-            int soma = matematica.Soma(-20,-60);
+            int soma = matematica.Soma(20,60);
             Console.WriteLine(soma);
 
-            int subtracao = matematica.Subtrai(-7,3);
+            int subtracao = matematica.Subtrai(7,3);
             Console.WriteLine(subtracao);
 
-            int multiplicacao = matematica.Multiplica(-9,3);
+            int multiplicacao = matematica.Multiplica(9,3);
             Console.WriteLine(multiplicacao);
 
-            int exponenciacao = matematica.Exponencia(-9,3);
+            int exponenciacao = matematica.Exponencia(9,3);
             Console.WriteLine(exponenciacao);
 
         }
