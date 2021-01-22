@@ -2,37 +2,44 @@
 
 namespace atividade_6_jogo_de_adivinhacao
 {
-    class Program
+  class Program
+  {
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            /*
-                Criar um jogo que adivinha um número em 8 tentativas
-            */
-            
-            int[] numeros = new int[100];
-            
-            int i = 0;
-            string respostaUsuario = ">";
-            int adivinhaNumero = 0;
+      /*
+          Criar um jogo que adivinha um número em 8 tentativas
+      */
 
-            while (respostaUsuario == ">")
-            {
-                for (i = 1; i < numeros.Length; i++)
-                {  
-                    numeros[i] = i + 1;
-                    Console.Write(numeros[i] + " ");
-                }
+      Console.WriteLine("Escolha um número de 1 a 100.");
 
-                Console.WriteLine();
-                Console.WriteLine(adivinhaNumero);
-                respostaUsuario = Console.ReadLine();
-                if (respostaUsuario == ">")
-                {
-                    numeros = new int[adivinhaNumero];
-                }
+        int palpite = 0;
+        int inicioIntervalo = 1;
+        int finalIntervalo = 100;
 
-            }
+      for(int i = 0; i < 9; i++)
+      {
+        Console.WriteLine(i);
+        palpite = (inicioIntervalo + finalIntervalo) / 2;
+        
+        Console.WriteLine("Seu número é " + palpite + "?");
+
+        string resposta = Console.ReadLine(); 
+
+        if(resposta == ">")
+        { 
+          inicioIntervalo = palpite;
+          Console.WriteLine(palpite);
         }
+        else if (resposta == "<")
+        {
+          finalIntervalo = palpite;
+        }
+        else
+        {
+          Console.WriteLine("Acertei finalemente!");
+          break;
+        }
+      }
     }
+  }
 }
