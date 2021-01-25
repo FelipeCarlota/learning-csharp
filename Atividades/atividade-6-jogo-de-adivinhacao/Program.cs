@@ -18,9 +18,7 @@ namespace atividade_6_jogo_de_adivinhacao
 
       for(int i = 0; i < 9; i++)
       {
-        Console.WriteLine(i);
         palpite = (inicioIntervalo + finalIntervalo) / 2;
-        
         Console.WriteLine("Seu número é " + palpite + "?");
 
         string resposta = Console.ReadLine(); 
@@ -28,7 +26,6 @@ namespace atividade_6_jogo_de_adivinhacao
         if(resposta == ">")
         { 
           inicioIntervalo = palpite;
-          Console.WriteLine(palpite);
         }
         else if (resposta == "<")
         {
