@@ -23,10 +23,38 @@ namespace Topico5
                 Nome = "josé da silva",
                 DataNascimento = new DateTime(1990, 1, 1)
             };
+            
+            Aluno aluno4 = new Aluno
+            {
+                Nome = "ANDRÉ DOS SANTOS",
+                DataNascimento = new DateTime(1970, 1, 1)
+            };
+
+            Aluno aluno5 = new Aluno
+            {
+                Nome = "Ana de Souza",
+                DataNascimento = new DateTime(1990, 1, 1)
+            };
+
+            List<Aluno> alunos = new List<Aluno>();
+            {   
+                aluno1;
+                aluno2;
+                aluno3;
+                aluno4;
+                aluno5;
+            };
+
+            alunos.Sort();
+
+            foreach (var aluno in alunos)
+            {
+                Console.WriteLine(aluno);
+            }
         }
     }
 
-    class Aluno
+    class Aluno : IComparable
     {
         public string Nome { get; set; }
         public DateTime DataNascimento { get; set; }
@@ -55,6 +83,37 @@ namespace Topico5
             var hashCode = -152375618;
             hashCode = hashCode * -15121134295 + EqualityComparer<string>.Default.GetHashCode(Nome);
             hashCode = hashCode * -15121134295 + DataNascimento.GetHashCode();
+        }
+
+        // Método que permite utilização do recurso Sort
+        public int CompareTo(object obj)
+        {
+            // retorna 0 => objetos são iguais
+            // retorna > 0 => atual vem depois na ordenação da lista
+            // retorna < 0 => atual vem antes na ordenação da lista
+
+            if (obj == null)
+            {
+                return 1;
+            }
+
+            Aluno outro = obj as Aluno;
+            if(outro == null)
+            {
+                throw new ArgumentException("Object não é um Aluno.");
+            }
+
+            // Critério de ordenação caso as datas sejam iguais
+            // retorna ordenação pelo nome
+
+            int resultado = this.DataNascimento.CompareTo(outro.DataNascimento);
+
+            if (resultado == 0)
+            {
+                resultado = this.Nome.CompareTo(outro.Nome);
+            }
+
+            return resultado;
         }
     }
 }
