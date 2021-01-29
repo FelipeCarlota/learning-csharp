@@ -28,47 +28,49 @@ namespace atividade_9_ordenar_numeros
         // Reescrever em quick sort o mais rápido possível
         public int[] ordenaNumeros(int[] ordenar, int i)
         {   
-            int tamanhoArrayDireita = 1, tamanhoArrayEsquerda = 1, tamanho = ordenar.Length;;
+
+            //Defininod os arrays que serão utilizados
             int[] arrayPivo = new int[1];
-            int[] arrayEsquerda = new int[tamanhoArrayEsquerda];
-            int[] arrayDireita = new int[tamanhoArrayDireita];
-            
+            int tamanhoDoArrayDosMenores = 0;
+            int tamanhoDoArrayDosMaiores = 0;
+
+            // Definindo qual será meu pivo de comparação
             arrayPivo[0] = ordenar[ordenar.Length/2];
+            Console.WriteLine($"Meu número pivo do array principal é: {arrayPivo[0]}");
 
-            if(ordenar[i] < arrayPivo[0])
+            // Descobrindo quantos números no arrau principal são menores do que o valor pivo
+            for (i = 0; i < ordenar.Length; i++)
             {
-                tamanhoArrayEsquerda += 1;
-                arrayEsquerda[i] = ordenar[i];
-
-                Console.WriteLine($"Acho que adicionei na esquerda");
+                if (ordenar[i] < arrayPivo[0])
+                {
+                    tamanhoDoArrayDosMenores += 1;
+                }
+                if (ordenar[i] > arrayPivo[0])
+                {
+                    tamanhoDoArrayDosMaiores += 1;
+                }
             }
-            tamanhoArrayDireita += 1;
-            arrayDireita[i] = ordenar[i];
 
-            Console.WriteLine($"Acho que adicionei na direita");
+            Console.WriteLine($"Eu sou o tamanho do array da esquerda: {tamanhoDoArrayDosMenores}");
+            Console.WriteLine($"Eu sou o tamanho do array da direita: {tamanhoDoArrayDosMaiores}");
 
+            // Definindo o tamanho do ArrayEsqureda
+            int[] arrayDosMenores = new int[tamanhoDoArrayDosMenores];
 
-            // Console.WriteLine(arrayEsquerda.Length);
-            // Console.WriteLine(arrayEsquerda[i]); 
-            Console.WriteLine($"Sou o ArrayPrincipal na posição {i}: {ordenar[i]}");
-            Console.WriteLine($"Sou o ArrayPivo: {arrayPivo[0]}");
-            Console.WriteLine($"Sou o i: {i}");
-            // Console.WriteLine($"Sou o arrayEsquerda: {arrayEsquerda[0]}");
-            Console.WriteLine($"Sou o arrayEsquerda: {tamanhoArrayEsquerda}");
-            Console.WriteLine($"Sou o arrayEsquerda: {arrayEsquerda.Length}");
-            // Console.WriteLine($"Sou o arrayDireita: {arrayDireita[0]}");
-            Console.WriteLine($"Sou o arrayDireita: {tamanhoArrayDireita}");
-            Console.WriteLine($"Sou o arrayDireita: {arrayDireita.Length}");
-            
+            // Definindo o tamanho do ArrayDireita
+            int[] arrayDosMaiores = new int[tamanhoDoArrayDosMaiores];
+
+            if (ordenar[i] < arrayPivo[0])
+            {
+                arrayDosMenores[i] = ordenar[i];
+            }
+            if (ordenar[i] > arrayPivo[0])
+            {
+                arrayDosMaiores[i] = ordenar[i];
+            }
             ordenaNumeros(ordenar, i+1);
-                
-           
-            // if (arrayEsquerda.Length >= 2 && arrayEsquerda[i+1] < arrayEsquerda[i])
-            // {
-            
-            // } 
 
-            // ordenaNumeros(ordenar, i+1);
+            for (int j = 0; j < tamanhoDoArrayDosMaiores; i++){Console.WriteLine(arrayDosMaiores[j]);}
                
             return ordenar;
             
