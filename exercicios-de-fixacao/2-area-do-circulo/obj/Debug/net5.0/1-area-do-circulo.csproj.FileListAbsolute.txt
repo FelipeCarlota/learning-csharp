@@ -1,0 +1,15 @@
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/1-area-do-circulo/bin/Debug/net5.0/1-area-do-circulo.deps.json
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/1-area-do-circulo/bin/Debug/net5.0/1-area-do-circulo.runtimeconfig.json
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/1-area-do-circulo/bin/Debug/net5.0/1-area-do-circulo.runtimeconfig.dev.json
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/1-area-do-circulo/bin/Debug/net5.0/1-area-do-circulo.dll
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/1-area-do-circulo/bin/Debug/net5.0/ref/1-area-do-circulo.dll
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/1-area-do-circulo/bin/Debug/net5.0/1-area-do-circulo.pdb
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/1-area-do-circulo/obj/Debug/net5.0/1-area-do-circulo.csprojAssemblyReference.cache
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/1-area-do-circulo/obj/Debug/net5.0/1-area-do-circulo.GeneratedMSBuildEditorConfig.editorconfig
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/1-area-do-circulo/obj/Debug/net5.0/1-area-do-circulo.AssemblyInfoInputs.cache
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/1-area-do-circulo/obj/Debug/net5.0/1-area-do-circulo.AssemblyInfo.cs
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/1-area-do-circulo/obj/Debug/net5.0/1-area-do-circulo.csproj.CoreCompileInputs.cache
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/1-area-do-circulo/obj/Debug/net5.0/1-area-do-circulo.dll
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/1-area-do-circulo/obj/Debug/net5.0/ref/1-area-do-circulo.dll
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/1-area-do-circulo/obj/Debug/net5.0/1-area-do-circulo.pdb
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/1-area-do-circulo/obj/Debug/net5.0/1-area-do-circulo.genruntimeconfig.cache
