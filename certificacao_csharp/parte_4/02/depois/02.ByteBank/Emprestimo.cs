@@ -103,6 +103,8 @@ namespace _02.ByteBank
         public void GravarLog(string mensagem)
         {
             String arquivo = "";
+            //Diretivas de Pré Compilação #if/#else/#endif
+            //Só é avaliada antes da compilação, indicando ao compilador qual dos trechos serão inclusos no código compilado.
 #if (DEBUG)
             arquivo = ARQUIVO_LOG_TESTE;
 #else
