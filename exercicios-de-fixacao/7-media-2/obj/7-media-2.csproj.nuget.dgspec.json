@@ -13,6 +13,9 @@
         "packagesPath": "/Users/felipecarlota/.nuget/packages/",
         "outputPath": "/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/7-media-2/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "/Users/felipecarlota/.nuget/NuGet/NuGet.Config"
         ],

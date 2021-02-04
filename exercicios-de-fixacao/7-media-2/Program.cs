@@ -34,6 +34,7 @@ namespace _7_media_2
             media = (((a * pesoA) + (b * pesoB) + (c * pesoC)) / (pesoA + pesoB + pesoC));
 
             Console.WriteLine($"MEDIA = {Math.Round(media, 1)}");
+
         }
     }
 }

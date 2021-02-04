@@ -20,6 +20,11 @@ namespace _04.ByteBank
 
             //MenuCaixaEletronico menu = new MenuCaixaEletronico();
             //menu.Executar();
+
+            // Console.WriteLine("Fim do Programa...");
+            // Console.ReadLine();
+            IList<Conta> contasEspeciais = GetContasEspeciais();
+            bool existe = ExisteContaComMaisDe50000();
         }
 
 
@@ -31,6 +36,33 @@ namespace _04.ByteBank
             //TAREFA: RETORNAR UMA LISTA COM 
             //TODAS AS CONTAS COM MAIS DE 5 MIL DE SALDO
 
+            // for(int i = 0; i < clientes.Count;i++)
+            // {
+            //     Cliente cliente = clientes[i];
+            //     for(int j = 0; j < cliente.Contas.Count; j++)
+            //     {
+            //         Conta conta = cliente.Contas[j];
+            //         if (conta.saldo < 5000)
+            //         {
+            //             contasEspeciais.Add(conta);
+            //         }
+            //     }
+            // }
+
+            //Substituindo por Foreach
+
+            foreach(Cliente cliente in clientes)
+            {
+                foreach(Conta conta in cliente.Contas)
+                {
+                    if (conta.saldo < 5000)
+                    {
+                        contasEspeciais.Add(conta);
+                    }
+                }
+            }
+
+
             return contasEspeciais;
         }
 
@@ -40,6 +72,16 @@ namespace _04.ByteBank
 
             //TAREFA: RETORNAR VERDADEIRO OU FALSO
             //INDICANDO SE EXISTE CONTA COM MAIS DE 50 MIL DE SALDO
+            foreach(var cliente in clientes)
+            {
+                foreach (var conta in contas)
+                {
+                    if(conta.Saldo > 50000)
+                    {
+                        return true; //Early return
+                    }
+                }
+            }
 
             return false;
         }
@@ -76,13 +118,19 @@ namespace _04.ByteBank
             //FATORIAL DE 0                      = 1 
 
             int fatorial = 1;
-            int fator = numero;
+            //int fator = numero; //Declaração
 
-            while (fator >= 1)
+            //while (fator >= 1) //Condição
+            //{
+            //    fatorial = fatorial * fator; // O que a repetição faz
+            //    fator = fator - 1; //Decremento
+            //}
+
+            for (int fator = numero; fator >= 1; fator = fator - 1)
             {
                 fatorial = fatorial * fator;
-                fator = fator - 1;
             }
+
             System.Console.WriteLine($"fatorial de {numero} é {fatorial}");
 
             return fatorial;
