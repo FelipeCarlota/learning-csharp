@@ -10,6 +10,28 @@ namespace _05.ByteBank
     {
         static void Main(string[] args)
         {
+            ContaCorrente conta1 = new ContaCorrente(1, 100);
+            ContaCorrente conta2 = new ContaCorrente(4, 50);
+
+            Console.WriteLine(conta1);
+            Console.WriteLine(conta2);
+            
+            ITransferenciaBancaria transferencia = new TransferenciaBancaria();
+
+            transferencia.Efetuar(conta1, conta2, 30);
+
+            Console.WriteLine(conta1);
+            Console.WriteLine(conta2);
+
+            try 
+            {
+                transferencia.Efetuar(conta1, null, 50);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Aconteceu um erro na transferência.")
+                Logger.LogErro(ex.toString());
+            }
             Console.ReadKey();
         }
     }
