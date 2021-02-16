@@ -1,0 +1,6 @@
+/Users/felipecarlota/projetos/learning-csharp/csharp-do-zero/UtilizaandoVariaveis/2-TestandoEstruturaRepeticao/bin/Debug/2-TestandoEstruturaRepeticao.exe
+/Users/felipecarlota/projetos/learning-csharp/csharp-do-zero/UtilizaandoVariaveis/2-TestandoEstruturaRepeticao/bin/Debug/2-TestandoEstruturaRepeticao.pdb
+/Users/felipecarlota/projetos/learning-csharp/csharp-do-zero/UtilizaandoVariaveis/2-TestandoEstruturaRepeticao/obj/anycpu/Debug/2-TestandoEstruturaRepeticao.csprojAssemblyReference.cache
+/Users/felipecarlota/projetos/learning-csharp/csharp-do-zero/UtilizaandoVariaveis/2-TestandoEstruturaRepeticao/obj/anycpu/Debug/2-TestandoEstruturaRepeticao.csproj.CoreCompileInputs.cache
+/Users/felipecarlota/projetos/learning-csharp/csharp-do-zero/UtilizaandoVariaveis/2-TestandoEstruturaRepeticao/obj/anycpu/Debug/2-TestandoEstruturaRepeticao.exe
+/Users/felipecarlota/projetos/learning-csharp/csharp-do-zero/UtilizaandoVariaveis/2-TestandoEstruturaRepeticao/obj/anycpu/Debug/2-TestandoEstruturaRepeticao.pdb
