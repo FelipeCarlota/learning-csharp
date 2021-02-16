@@ -1,0 +1,15 @@
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/7-media-2/bin/Debug/net5.0/7-media-2.deps.json
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/7-media-2/bin/Debug/net5.0/7-media-2.runtimeconfig.json
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/7-media-2/bin/Debug/net5.0/7-media-2.runtimeconfig.dev.json
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/7-media-2/bin/Debug/net5.0/7-media-2.dll
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/7-media-2/bin/Debug/net5.0/ref/7-media-2.dll
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/7-media-2/bin/Debug/net5.0/7-media-2.pdb
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/7-media-2/obj/Debug/net5.0/7-media-2.csprojAssemblyReference.cache
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/7-media-2/obj/Debug/net5.0/7-media-2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/7-media-2/obj/Debug/net5.0/7-media-2.AssemblyInfoInputs.cache
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/7-media-2/obj/Debug/net5.0/7-media-2.AssemblyInfo.cs
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/7-media-2/obj/Debug/net5.0/7-media-2.csproj.CoreCompileInputs.cache
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/7-media-2/obj/Debug/net5.0/7-media-2.dll
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/7-media-2/obj/Debug/net5.0/ref/7-media-2.dll
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/7-media-2/obj/Debug/net5.0/7-media-2.pdb
+/Users/felipecarlota/projetos/learning-csharp/exercicios-de-fixacao/7-media-2/obj/Debug/net5.0/7-media-2.genruntimeconfig.cache

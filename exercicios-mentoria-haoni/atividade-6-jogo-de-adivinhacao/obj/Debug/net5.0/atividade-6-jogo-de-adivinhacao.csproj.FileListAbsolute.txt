@@ -1,0 +1,15 @@
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-6-jogo-de-adivinhacao/bin/Debug/net5.0/atividade-6-jogo-de-adivinhacao.deps.json
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-6-jogo-de-adivinhacao/bin/Debug/net5.0/atividade-6-jogo-de-adivinhacao.runtimeconfig.json
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-6-jogo-de-adivinhacao/bin/Debug/net5.0/atividade-6-jogo-de-adivinhacao.runtimeconfig.dev.json
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-6-jogo-de-adivinhacao/bin/Debug/net5.0/atividade-6-jogo-de-adivinhacao.dll
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-6-jogo-de-adivinhacao/bin/Debug/net5.0/ref/atividade-6-jogo-de-adivinhacao.dll
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-6-jogo-de-adivinhacao/bin/Debug/net5.0/atividade-6-jogo-de-adivinhacao.pdb
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-6-jogo-de-adivinhacao/obj/Debug/net5.0/atividade-6-jogo-de-adivinhacao.csprojAssemblyReference.cache
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-6-jogo-de-adivinhacao/obj/Debug/net5.0/atividade-6-jogo-de-adivinhacao.GeneratedMSBuildEditorConfig.editorconfig
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-6-jogo-de-adivinhacao/obj/Debug/net5.0/atividade-6-jogo-de-adivinhacao.AssemblyInfoInputs.cache
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-6-jogo-de-adivinhacao/obj/Debug/net5.0/atividade-6-jogo-de-adivinhacao.AssemblyInfo.cs
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-6-jogo-de-adivinhacao/obj/Debug/net5.0/atividade-6-jogo-de-adivinhacao.csproj.CoreCompileInputs.cache
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-6-jogo-de-adivinhacao/obj/Debug/net5.0/atividade-6-jogo-de-adivinhacao.dll
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-6-jogo-de-adivinhacao/obj/Debug/net5.0/ref/atividade-6-jogo-de-adivinhacao.dll
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-6-jogo-de-adivinhacao/obj/Debug/net5.0/atividade-6-jogo-de-adivinhacao.pdb
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-6-jogo-de-adivinhacao/obj/Debug/net5.0/atividade-6-jogo-de-adivinhacao.genruntimeconfig.cache
