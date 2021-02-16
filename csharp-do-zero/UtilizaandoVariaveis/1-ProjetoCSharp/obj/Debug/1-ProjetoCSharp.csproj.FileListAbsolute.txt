@@ -1,6 +1,0 @@
-/Users/felipecarlota/projetos/learning-csharp/csharp-do-zero/UtilizaandoVariaveis/1-ProjetoCSharp/bin/Debug/1-ProjetoCSharp.exe
-/Users/felipecarlota/projetos/learning-csharp/csharp-do-zero/UtilizaandoVariaveis/1-ProjetoCSharp/bin/Debug/1-ProjetoCSharp.pdb
-/Users/felipecarlota/projetos/learning-csharp/csharp-do-zero/UtilizaandoVariaveis/1-ProjetoCSharp/obj/Debug/1-ProjetoCSharp.csprojAssemblyReference.cache
-/Users/felipecarlota/projetos/learning-csharp/csharp-do-zero/UtilizaandoVariaveis/1-ProjetoCSharp/obj/Debug/1-ProjetoCSharp.csproj.CoreCompileInputs.cache
-/Users/felipecarlota/projetos/learning-csharp/csharp-do-zero/UtilizaandoVariaveis/1-ProjetoCSharp/obj/Debug/1-ProjetoCSharp.exe
-/Users/felipecarlota/projetos/learning-csharp/csharp-do-zero/UtilizaandoVariaveis/1-ProjetoCSharp/obj/Debug/1-ProjetoCSharp.pdb
