@@ -1,0 +1,15 @@
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-4-conta-dias/bin/Debug/net5.0/atividade-4-conta-dias.deps.json
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-4-conta-dias/bin/Debug/net5.0/atividade-4-conta-dias.runtimeconfig.json
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-4-conta-dias/bin/Debug/net5.0/atividade-4-conta-dias.runtimeconfig.dev.json
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-4-conta-dias/bin/Debug/net5.0/atividade-4-conta-dias.dll
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-4-conta-dias/bin/Debug/net5.0/ref/atividade-4-conta-dias.dll
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-4-conta-dias/bin/Debug/net5.0/atividade-4-conta-dias.pdb
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-4-conta-dias/obj/Debug/net5.0/atividade-4-conta-dias.csprojAssemblyReference.cache
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-4-conta-dias/obj/Debug/net5.0/atividade-4-conta-dias.GeneratedMSBuildEditorConfig.editorconfig
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-4-conta-dias/obj/Debug/net5.0/atividade-4-conta-dias.AssemblyInfoInputs.cache
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-4-conta-dias/obj/Debug/net5.0/atividade-4-conta-dias.AssemblyInfo.cs
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-4-conta-dias/obj/Debug/net5.0/atividade-4-conta-dias.csproj.CoreCompileInputs.cache
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-4-conta-dias/obj/Debug/net5.0/atividade-4-conta-dias.dll
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-4-conta-dias/obj/Debug/net5.0/ref/atividade-4-conta-dias.dll
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-4-conta-dias/obj/Debug/net5.0/atividade-4-conta-dias.pdb
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-4-conta-dias/obj/Debug/net5.0/atividade-4-conta-dias.genruntimeconfig.cache

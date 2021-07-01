@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3yV1TQbaaPnp427m1xlvsOHtsoLDu9Nx8q5xEfdYZYdvLJ2BQbfy1KXxqSIyQ0wlBfrPor5LvLqGujQuTj3E4g==",
+  "success": true,
+  "projectFilePath": "/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-2-operacao-matematica/operacao-matematica.csproj",
+  "expectedPackageFiles": [
+    "/Users/felipecarlota/.nuget/packages/awssdk.core/3.5.1.59/awssdk.core.3.5.1.59.nupkg.sha512"
+  ],
+  "logs": []
+}

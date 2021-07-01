@@ -1,0 +1,15 @@
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-10-calcula-idade-media-individuos/bin/Debug/net5.0/atividade-10-calcula-idade-media-individuos.deps.json
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-10-calcula-idade-media-individuos/bin/Debug/net5.0/atividade-10-calcula-idade-media-individuos.runtimeconfig.json
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-10-calcula-idade-media-individuos/bin/Debug/net5.0/atividade-10-calcula-idade-media-individuos.runtimeconfig.dev.json
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-10-calcula-idade-media-individuos/bin/Debug/net5.0/atividade-10-calcula-idade-media-individuos.dll
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-10-calcula-idade-media-individuos/bin/Debug/net5.0/ref/atividade-10-calcula-idade-media-individuos.dll
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-10-calcula-idade-media-individuos/bin/Debug/net5.0/atividade-10-calcula-idade-media-individuos.pdb
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-10-calcula-idade-media-individuos/obj/Debug/net5.0/atividade-10-calcula-idade-media-individuos.csprojAssemblyReference.cache
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-10-calcula-idade-media-individuos/obj/Debug/net5.0/atividade-10-calcula-idade-media-individuos.GeneratedMSBuildEditorConfig.editorconfig
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-10-calcula-idade-media-individuos/obj/Debug/net5.0/atividade-10-calcula-idade-media-individuos.AssemblyInfoInputs.cache
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-10-calcula-idade-media-individuos/obj/Debug/net5.0/atividade-10-calcula-idade-media-individuos.AssemblyInfo.cs
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-10-calcula-idade-media-individuos/obj/Debug/net5.0/atividade-10-calcula-idade-media-individuos.csproj.CoreCompileInputs.cache
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-10-calcula-idade-media-individuos/obj/Debug/net5.0/atividade-10-calcula-idade-media-individuos.dll
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-10-calcula-idade-media-individuos/obj/Debug/net5.0/ref/atividade-10-calcula-idade-media-individuos.dll
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-10-calcula-idade-media-individuos/obj/Debug/net5.0/atividade-10-calcula-idade-media-individuos.pdb
+/Users/felipecarlota/projetos/learning-csharp/Atividades/atividade-10-calcula-idade-media-individuos/obj/Debug/net5.0/atividade-10-calcula-idade-media-individuos.genruntimeconfig.cache

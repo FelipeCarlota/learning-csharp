@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "atividade-10-calcula-idade-media-individuos/1.0.0": {
+        "runtime": {
+          "atividade-10-calcula-idade-media-individuos.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "atividade-10-calcula-idade-media-individuos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
